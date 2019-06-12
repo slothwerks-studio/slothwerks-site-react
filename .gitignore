@@ -1,0 +1,17 @@
+# Dependencies
+slothwerks-site/node_modules/
+slothwerks-site/.pnp
+slothwerks-site/.pnp.js
+
+# Testing
+slothwerks-site/coverage
+
+# Production
+slothwerks-site/build
+
+# Miscellaneous
+slothwerks-site/.DS_Store
+slothwerks-site/.env.local
+slothwerks-site/.env.development.local
+slothwerks-site/.env.test.local
+slothwerks-site/.env.production.local
