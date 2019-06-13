@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// Import styles
-import './styles/master.scss';
+import { BrowserRouter } from "react-router-dom";
 
 // Import components
-import App from './App';
+import App from './app';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Note:  we are wrapping our app in a BrowserRouter component
+// provided by [React Router](https://reacttraining.com/react-router/).
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>, document.getElementById('root')
+);
