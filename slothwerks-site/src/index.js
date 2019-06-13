@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
 
+// Import master stylesheet
+import './styles/master.scss';
+
 // Import components
 import App from './app';
 

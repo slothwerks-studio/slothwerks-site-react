@@ -3,7 +3,7 @@
   "name": "Website for SlothWerks LLC",
   "icons": [
     {
-      "src": "/assets/icons/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "256x256 32x32 16x16",
       "type": "image/x-icon"
     }
