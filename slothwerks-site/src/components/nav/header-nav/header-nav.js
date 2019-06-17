@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 /* 
   Component Description:
@@ -16,7 +16,17 @@ export default function HeaderNav(props) {
     <nav>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-      <div onClick={()=>props.toggleSandwichMenu()}>Menu</div>
+      <Switch>
+        <Route path="/contact">
+          <img src={require('../../../assets/icons/contact-purple-hollow.png')} />
+        </Route>
+        <Route path="*">
+          <img src={require('../../../assets/icons/contact-purple-filled.png')} />
+        </Route>
+      </Switch>
+      <span onClick={()=>props.toggleSandwichMenu()}>
+        <img src={require('../../../assets/icons/sandwich-menu-black.png')} />
+      </span>
     </nav>
   );
 

@@ -15,7 +15,7 @@ export default function Header(props) {
 
   return (
     <header>
-      Header
+      <img src={require('../../../assets/images/logo-text-only.png')} />
       <HeaderNav toggleSandwichMenu={props.toggleSandwichMenu} />
     </header>
   );
