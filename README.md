@@ -35,3 +35,9 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Troubleshooting
+
+#### Port on Windows locked by another process
+
+Sometimes a previous session will lock port 3000.  This can be resolved using [a few quick commands in PowerShell or Command](https://stackoverflow.com/questions/39632667/how-to-kill-the-process-currently-using-a-port-on-localhost-in-windows).
