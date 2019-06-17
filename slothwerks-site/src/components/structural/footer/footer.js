@@ -2,18 +2,18 @@ import React, { useState, Fragment } from 'react';
 
 /* 
   Component Description:
-    This is the about screen view.
+    This is the footer bar.
 
   Incoming Props:
     None
 */
 
-export default function About() {
+export default function Footer() {
 
   return (
-    <div className="About">
-      About
-    </div>
+    <footer>
+      Footer
+    </footer>
   );
 
 }

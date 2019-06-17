@@ -1,9 +1,13 @@
 import React, { useState, Fragment } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 
-// Import view components
-import Home from './views/home/home';
-import About from './views/about/about';
+// Import router
+import Router from './router/router';
+
+// Import components
+import Header from './components/structural/header/header';
+import Footer from './components/structural/footer/footer';
+import SandwichMenu from './components/nav/sandwich-menu/sandwich-menu';
 
 /* 
   Component Description:
@@ -13,27 +17,30 @@ import About from './views/about/about';
     None
 */
 
-export default function app() {
+export default function App() {
+
+  // Set initial state
+  const [showSandwichMenu, setShowSandwichMenu] = useState(false);
+
+  // Build callback function to toggle sandwich menu
+  const toggleSandwichMenu = () => {
+    setShowSandwichMenu(!showSandwichMenu);
+  }
 
   return (
     <Fragment>
       {/* Insert absolutely-positioned sandwich menu here */}
+      { (showSandwichMenu) ?
+        <SandwichMenu toggleSandwichMenu={toggleSandwichMenu} />
+      :
+        null
+      }
       {/* Insert sticky header here */}
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-      {/* Views should go inside switch */}
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        {/* <Route path="/contact" component={Contact} />
-        <Route path="/media-archives" component={Media_Archives} />
-        <Route path="/tech-calendar" component={Tech_Calendar} />
-        <Route path="/ena-calendar" component={ENA_Calendar} /> */}
-        {/* <Route component={Error_404} /> */}
-      </Switch>
+      <Header toggleSandwichMenu={toggleSandwichMenu} />
+      {/* Insert router here */}
+      <Router />
       {/* Insert footer here */}
+      <Footer />
     </Fragment>
   );
 
