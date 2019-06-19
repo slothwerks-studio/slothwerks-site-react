@@ -13,19 +13,33 @@ import { Route, Switch, Link } from "react-router-dom";
 export default function HeaderNav(props) {
 
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+    <nav className="HeaderNav">
       <Switch>
         <Route path="/contact">
-          <img src={require('../../../assets/icons/contact-purple-hollow.png')} />
+          <span className="contact-icon-container">
+            <img 
+              className="contact-icon"
+              src={require('../../../assets/icons/contact-purple-hollow.png')} 
+            />
+          </span>
         </Route>
         <Route path="*">
-          <img src={require('../../../assets/icons/contact-purple-filled.png')} />
+          <Link to="/contact" className="contact-icon-container">
+            <img 
+              className="contact-icon"
+              src={require('../../../assets/icons/contact-purple-filled.png')} 
+            />
+          </Link>
         </Route>
       </Switch>
-      <span onClick={()=>props.toggleSandwichMenu()}>
-        <img src={require('../../../assets/icons/sandwich-menu-black.png')} />
+      <span 
+        className="sandwich-menu-icon-container"
+        onClick={()=>props.toggleSandwichMenu()}
+      >
+        <img 
+          className="sandwich-menu-icon"
+          src={require('../../../assets/icons/sandwich-menu-black.png')} 
+        />
       </span>
     </nav>
   );

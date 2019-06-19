@@ -1,0 +1,31 @@
+/* Import global stylesheets */
+@import './master.scss';
+@import './colors.scss';
+@import './variables.scss';
+@import './resets.scss';
+
+/* Import individual view styles */
+@import '../views/home/home.scss';
+
+/* Import component styles */
+@import '../components/structural/header/header.scss';
+@import '../components/structural/footer/footer.scss';
+@import '../components/nav/header-nav/header-nav.scss';
+@import '../components/nav/sandwich-menu/sandwich-menu.scss';
+
+/* Import fonts */
+@font-face {
+  font-family: 'Rabbid Highway Sign II';
+  src: url('../assets/fonts/RabbidHighwaySignII.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
