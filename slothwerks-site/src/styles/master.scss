@@ -1,9 +1,14 @@
 /* Import global stylesheets */
-@import './colors';
-@import './variables';
+@import './colors.scss';
+@import './variables.scss';
+@import './resets.scss';
 
 /* Import individual view styles */
-@import '../views/home/home';
+@import '../views/home/home.scss';
+
+/* Import component styles */
+@import '../components/structural/header/header.scss';
+@import '../components/structural/footer/footer.scss';
 
 /* Import fonts */
 @font-face {
@@ -19,5 +24,9 @@
 @font-face {
   font-family: 'Open Sans Bold';
   src: url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
 }
 

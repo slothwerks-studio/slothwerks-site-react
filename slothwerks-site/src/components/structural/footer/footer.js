@@ -11,8 +11,10 @@ import React, { useState, Fragment } from 'react';
 export default function Footer() {
 
   return (
-    <footer>
-      Footer
+    <footer className="Footer">
+      <span className="copyright">
+        &copy;SlothWerks LLC
+      </span>
     </footer>
   );
 

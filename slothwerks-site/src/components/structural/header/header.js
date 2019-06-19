@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 // Import components
 import HeaderNav from '../../nav/header-nav/header-nav';
@@ -14,8 +15,15 @@ import HeaderNav from '../../nav/header-nav/header-nav';
 export default function Header(props) {
 
   return (
-    <header>
-      <img src={require('../../../assets/images/logo-text-only.png')} />
+    <header className="Header">
+      <Link to="/" className="header-logo-container"> 
+        <span className="header-logo-sloth-text">
+          Sloth
+        </span>
+        <span className="header-logo-werks-text">
+          Werks
+        </span>
+      </Link>
       <HeaderNav toggleSandwichMenu={props.toggleSandwichMenu} />
     </header>
   );
