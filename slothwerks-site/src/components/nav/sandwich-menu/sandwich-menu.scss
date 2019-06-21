@@ -1,0 +1,81 @@
+.SandwichMenu {
+  position: fixed;
+  top: 0; right: 0; left: 0; bottom: 0;
+  z-index: 99;
+  overflow: hidden;
+  background-color: $purpleDarker;
+
+  .sandwich-menu-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .sandwich-menu-header {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      margin-bottom: 15px;
+    
+      .header-logo-container {
+        font-family: "Rabbid Highway Sign II";
+        letter-spacing: .05em;
+        color: white;
+      }
+
+      .close-icon-container {
+        .close-icon {
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+    }
+
+    .sandwich-menu-links {
+      width: 100%;
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+      .menu-link {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        span {
+          font-family: "Open Sans Bold";
+          width: 100%;
+          text-align: center;
+          font-size: 1.5em;
+          line-height: 1.3em;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+
+    .sandwich-menu-footer {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      .copyright {
+        font-size: .8em;
+        color: white;
+      }
+    }
+
+  }
+
+}
