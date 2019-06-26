@@ -6,6 +6,7 @@
 
 /* Import individual view styles */
 @import '../views/home/home.scss';
+@import '../views/about/about.scss';
 
 /* Import component styles */
 @import '../components/structural/header/header.scss';
@@ -22,6 +23,11 @@
 @font-face {
   font-family: 'Open Sans Regular';
   src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url('../assets/fonts/OpenSans-Semibold.ttf') format('truetype');
 }
 
 @font-face {
