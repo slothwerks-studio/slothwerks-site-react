@@ -4,28 +4,6 @@
   flex: 1;
   padding: 30px;
 
-  .page-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-
-    .page-heading-text {
-      text-align: center;
-      font-family: "Rabbid Highway Sign II";
-      font-size: .95em;
-      font-weight: 400;
-      letter-spacing: .05em;
-      margin-bottom: 15px;
-    }
-
-    .page-heading-divider {
-      width: 50px;
-      border-bottom: 2px solid $brownLight;
-    }
-
-  }
-
   .content-text-wrapper {
     margin-bottom: 5px;
 
@@ -40,24 +18,6 @@
         font-family: "Open Sans Bold";
         font-size: inherit;
       }
-    }
-
-  }
-
-  .button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .action-button {
-      padding: 12px 50px;
-      background-color: $purpleLight;
-      color: white;
-      font-family: "Open Sans SemiBold";
-      font-size: .8em;
-      letter-spacing: .08em;
-      border-radius: 3px;
-      border: none;
     }
 
   }

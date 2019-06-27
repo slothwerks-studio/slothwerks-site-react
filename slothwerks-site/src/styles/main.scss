@@ -1,12 +1,13 @@
 /* Import global stylesheets */
-@import './master.scss';
 @import './colors.scss';
 @import './variables.scss';
 @import './resets.scss';
+@import './master.scss';
 
 /* Import individual view styles */
 @import '../views/home/home.scss';
 @import '../views/about/about.scss';
+@import '../views/contact/contact.scss';
 
 /* Import component styles */
 @import '../components/structural/header/header.scss';

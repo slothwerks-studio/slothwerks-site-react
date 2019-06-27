@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 /* 
   Component Description:
@@ -24,9 +25,9 @@ export default function About() {
           We harness twenty years of technical experience to craft solutions for both commercial and non-profit clients throughout West Michigan.
         </p>
       </div>
-      <div className="button-wrapper">
+      <div className="action-button-wrapper">
         <button type="button" className="action-button">
-          Contact us!
+          <Link to="/contact">Contact us!</Link>
         </button>
       </div>
     </div>

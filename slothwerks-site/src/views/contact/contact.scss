@@ -1,0 +1,63 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px;
+  padding-bottom: 0; // Override due to contact buttons
+
+  .contact-text-wrapper {
+    margin-bottom: 5px;
+
+    .contact-text {
+      font-family: "Open Sans SemiBold";
+      text-align: center;
+      font-size: .8em;
+      line-height: 1.7em;
+      letter-spacing: .03em;
+      margin-bottom: 30px;
+      a {
+        color: $brownPrimary;
+        font-family: "Open Sans Bold";
+        font-size: inherit;
+      }
+    }
+
+  }
+
+  .contact-buttons-wrapper {
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button:nth-child(odd) {
+      margin-right: 30px;
+    }
+    
+    .contact-button {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      
+      a {
+        flex: 1;
+        display: flex;
+        padding: 25px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
