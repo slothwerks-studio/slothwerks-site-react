@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from '../views/home/home';
 import About from '../views/about/about';
 import Contact from '../views/contact/contact';
+import Audio_Archives from '../views/audio-archives/audio-archives';
 import Tech_Calendar from '../views/tech-calendar/tech-calendar';
 import ENA_Calendar from '../views/ena-calendar/ena-calendar';
 
@@ -25,7 +26,7 @@ export default function Router() {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      {/* <Route path="/media-archives" component={Media_Archives} /> */}
+      <Route path="/audio-archives" component={Audio_Archives} />
       <Route path="/tech-calendar" component={Tech_Calendar} />
       <Route path="/ena-calendar" component={ENA_Calendar} />
       {/* <Route component={Error_404} /> */}

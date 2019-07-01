@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 /* 
   Component Description:
-    This is the ENA calendar screen view.
+    This is the tech calendar screen view.
 
   Incoming Props:
     None
