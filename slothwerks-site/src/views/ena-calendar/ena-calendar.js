@@ -41,7 +41,9 @@ export default function ENA_Calendar() {
               </span>
             </div>
             <button type="button" className="action-button">
-              <a>View Calendar</a>
+              <a href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank">
+                View Calendar
+              </a>
             </button>
           </div>
           <div className="calendar-button-wrapper">
@@ -55,7 +57,9 @@ export default function ENA_Calendar() {
               </span>
             </div>
             <button type="button" className="action-button">
-              <a>Add</a>
+              <a href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">
+                Add
+              </a>
             </button>
           </div>
         </div>
