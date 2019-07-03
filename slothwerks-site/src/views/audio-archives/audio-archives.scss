@@ -1,11 +1,13 @@
-.Media_Archives {
+.Audio_Archives {
   display: flex;
   flex-direction: column;
   flex: 1;
 
   .audio-archives-wrapper {
     background: linear-gradient(180deg, #faf7f4, #ffffff);
-    padding: 40px 0 0 0;
+    padding: 40px 2px 30px 2px;
+    flex-direction: column;
+
   }
   
 }

@@ -18,6 +18,16 @@ body {
   flex-direction: column;
 }
 
+.bold {
+  font-family: "Open Sans Bold";
+  font-size: inherit;
+}
+
+.italic {
+  font-family: "Open Sans Italic";
+  font-size: inherit;
+}
+
 /* Page headings */
 
 .page-heading {
@@ -57,14 +67,6 @@ body {
     letter-spacing: .03em;
     text-align: left;
     margin-bottom: 30px;
-    .bold {
-      font-family: "Open Sans Bold";
-      font-size: inherit;
-    }
-    .italic {
-      font-style: italic;
-      font-size: inherit;
-    }
     a {
       color: $brownPrimary;
       font-family: "Open Sans Bold";

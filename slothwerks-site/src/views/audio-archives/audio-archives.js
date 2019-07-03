@@ -1,6 +1,9 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from "react-router-dom";
 
+// Import components
+import Audio_Archives_Card from './components/audio-archives-card';
+
 /* 
   Component Description:
     This is the audio archives screen view.
@@ -23,36 +26,38 @@ export default function Audio_Archives() {
         </p>
       </div>
       <div className="audio-archives-wrapper">
-        <div className="audio-archives-card-container">
-          <div className="audio-archives-card-image-container">
-            <img 
-              className="audio-archives-card-image"
-              src={require('../../assets/images/hack-show-2016.jpg')} 
-              alt="Turntable and mixing board"
-            />
-          </div>
-          <div className="audio-archives-card-info-container">
-            <div className="audio-archives-card-info">
-              <span className="audio-archives-card-title">
-                The Sloth Psychedelic HACK! Show (2016 Vinyl Edition)
-              </span>
-              <span className="audio-archives-info-text">
-                <span className="bold">Released:</span> 2016
-              </span>
-              <span className="audio-archives-info-text">
-                <span className="bold">Total Time:</span> 46 minutes
-              </span>
-            </div>
-            <div class="audio-player">
-              <audio controls>
-                <source src="https://www.slothwerks.com/media/new/sloth-psychedelic-hack-show-2016.mp3" type="audio/mp3" />
-                <p class="no-audio-support">
-                  Your browser doesn't support HTML5 audio. Access the source file directly <a href="https://www.slothwerks.com/media/new/sloth-psychedelic-hack-show-2016.mp3">here</a>.
-                </p>
-              </audio>
-            </div>
-          </div>
-        </div>
+        <Audio_Archives_Card
+          image={require("../../assets/images/hack-show-2016.jpg")}
+          imgAlt="Turntable and mixing board"
+          title="The Sloth Psychedelic HACK! Show (2016 Vinyl Edition)"
+          releaseDate="2016"
+          totalTime="46 minutes"
+          audioLocation="https://www.slothwerks.com/media/new/sloth-psychedelic-hack-show-2016.mp3"
+        />
+        <Audio_Archives_Card
+          image={require("../../assets/images/psychedelic-breakfast.jpg")}
+          imgAlt="Man eating stack of compact discs"
+          title="Sloth's Psychedelic Breakfast"
+          releaseDate="2007"
+          totalTime="55 minutes"
+          audioLocation="https://www.slothwerks.com/media/new/sloth-psychedelic-breakfast.mp3"
+        />
+        <Audio_Archives_Card
+          image={require("../../assets/images/arabian-nights.jpg")}
+          imgAlt="Illustration of dancing women"
+          title="1001 Arabian Nights"
+          releaseDate="2005"
+          totalTime="55 minutes"
+          audioLocation="https://www.slothwerks.com/media/new/1001-arabian-nights.mp3"
+        />
+        <Audio_Archives_Card
+          image={require("../../assets/images/arco-iris.jpg")}
+          imgAlt="Dimly-lit room with people and equipment"
+          title="1001 Arabian Nights"
+          releaseDate="1999"
+          totalTime="70 minutes"
+          audioLocation="https://www.slothwerks.com/media/new/live-at-arco-iris.mp3"
+        />
       </div>
     </div>
   );

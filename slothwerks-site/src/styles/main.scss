@@ -17,6 +17,7 @@
 @import '../components/structural/footer/footer.scss';
 @import '../components/nav/header-nav/header-nav.scss';
 @import '../components/nav/sandwich-menu/sandwich-menu.scss';
+@import '../views/audio-archives/components/audio-archives.card.scss';
 
 /* Import fonts */
 @font-face {
@@ -37,5 +38,10 @@
 @font-face {
   font-family: 'Open Sans Bold';
   src: url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url('../assets/fonts/OpenSans-Italic.ttf') format('truetype');
 }
 

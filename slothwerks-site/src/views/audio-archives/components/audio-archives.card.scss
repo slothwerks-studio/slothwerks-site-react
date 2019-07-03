@@ -1,0 +1,47 @@
+.audio-archives-card-container {
+  width: 100%;
+  border: 1px solid $brownLight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .audio-archives-card-info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .audio-archives-card-image-container {
+    flex: 1;
+    margin-right: 10px;
+    .audio-archives-card-image {
+      width: 100%;
+    }
+  }
+
+  .audio-archives-card-info {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 10px;
+    .audio-archives-card-title {
+      font-family: "Rabbid Highway Sign II";
+      color: $brownPrimary;
+      font-size: .8rem;
+      letter-spacing: .04rem;
+      line-height: 1.2rem;        
+    }
+    .audio-archives-info-text {
+      font-size: .8rem;
+      font-family: "Open Sans Regular";
+      line-height: 1.0rem; 
+    }
+  }
+
+  .audio-player {
+    margin-bottom: 10px;
+  }
+
+}
