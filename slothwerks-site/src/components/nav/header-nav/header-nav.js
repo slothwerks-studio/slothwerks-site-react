@@ -3,6 +3,7 @@ import { Route, Switch, Link } from "react-router-dom";
 
 // Import header navigation for various viewports
 import HeaderNavMobile from './components/header-nav-mobile';
+import HeaderNavDesktop from './components/header-nav-desktop';
 
 /* 
   Component Description:
@@ -18,6 +19,7 @@ export default function HeaderNav(props) {
   return (
     <div className="HeaderNav">
       <HeaderNavMobile toggleSandwichMenu={props.toggleSandwichMenu} />
+      <HeaderNavDesktop />
     </div>
   );
 

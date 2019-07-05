@@ -9,6 +9,9 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    @media screen and (min-width: 667px) {
+      display: none;
+    }
 
     .contact-icon-container {
       margin-right: 15px;
@@ -22,6 +25,37 @@
       .sandwich-menu-icon {
         height: 20px;
         width: 30px;
+      }
+    }
+
+  }
+
+  .HeaderNavDesktop {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: 667px) {
+      display: flex;
+    }
+
+    .header-nav-link-list {
+      display: flex;
+      justify-content: space-between;
+      .header-nav-link {
+        font-family: "Open Sans SemiBold";
+        font-size: .85rem;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+        margin-right: 40px;
+      }
+    }
+
+    .contact-icon-container {
+      margin: 0;
+      .contact-icon {
+        height: 60px;
+        width: 60px;
       }
     }
 

@@ -38,10 +38,10 @@ export default function Audio_Archives_Card(props) {
           </span>
         </div>
       </div>
-      <div class="audio-player">
+      <div className="audio-player">
         <audio controls className="audio-controls">
           <source src={props.audioLocation} type="audio/mp3" />
-          <p class="no-audio-support">
+          <p className="no-audio-support">
             Your browser doesn't support HTML5 audio. Access the source file directly <a href="https://www.slothwerks.com/media/new/sloth-psychedelic-hack-show-2016.mp3">here</a>.
           </p>
         </audio>

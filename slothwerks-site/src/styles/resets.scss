@@ -1,27 +1,14 @@
-/* Kill default padding, margins, et cetera */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, main
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1rem;
+form, input, textarea, button, p, div, header, footer, main, section, nav, audio, ul, ol, li, h1, h2, h3, h4, a, span {
+  box-sizing: border-box; /* Ensures padding is not included for width calculations */
+  margin: 0; /* Kill default values defined by the browser */
+  padding: 0; /* Kill default values defined by the browser */
   font-family: inherit;
-  vertical-align: baseline;
 }
 
+/* Kill default padding for body */
 body {
-  line-height: 1;
+  padding: 0;
+  margin: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -30,41 +17,25 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* List resets */
+/* No default list style for lists */
 ol, ul {
   list-style: none;
 }
 
-/* Block quote resets */
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* Table resets */
+/* No default spacing for table cells */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-form, input, textarea, button, p, div, header, footer, main, section, nav, ul, li, h1, h2, h3, h4, a {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Ensures padding is not included for width calculations */
-  margin: 0;
-  /* Kill default values defined by the browser */
-  padding: 0;
-  /* Kill default values defined by the browser */
-}
-
-a {
-  /* Kill default values for a tags */
+/* Kill default values for a tags */
+a { 
   font-weight: normal;
   text-decoration: none;
   color: inherit;
+}
+
+/* Kill outlines in Chrome and Firefox for a tags, buttons, and input boxes */
+button, a, input, textarea {
+  outline: none;
 }
