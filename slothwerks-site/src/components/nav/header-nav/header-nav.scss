@@ -1,22 +1,30 @@
 .HeaderNav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: stretch;
   flex-grow: 1;
   flex-shrink: 1;
 
-  .contact-icon-container {
-    margin-right: 15px;
-    .contact-icon {
-      height: 30px;
-      width: 30px;
+  .HeaderNavMobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    .contact-icon-container {
+      margin-right: 15px;
+      .contact-icon {
+        height: 30px;
+        width: 30px;
+      }
     }
+
+    .sandwich-menu-icon-container {
+      .sandwich-menu-icon {
+        height: 20px;
+        width: 30px;
+      }
+    }
+
   }
 
-  .sandwich-menu-icon-container {
-    .sandwich-menu-icon {
-      height: 20px;
-      width: 30px;
-    }
-  }
 }
