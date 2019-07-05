@@ -14,18 +14,74 @@ export default function HeaderNavDesktop(props) {
   return (
     <nav className="HeaderNavDesktop">
       <div className="header-nav-link-list">
-        <Link to="/about" className="header-nav-link">
-          About
-        </Link>
-        <Link to="/audio-archives" className="header-nav-link">
-          Audio<br />Archives
-        </Link>
-        <Link to="/ena-calendar" className="header-nav-link">
-          ENA Community<br />Calendar
-        </Link>
-        <Link to="/tech calendar" className="header-nav-link">
-          Grand Circus<br />Tech Calendar
-        </Link>
+        <Switch>
+          <Route path="/about">
+            <Link to="/about" className="header-nav-link active">
+              <span className="bold">
+                About
+              </span>
+              <span className="header-nav-link-underline" />
+            </Link>
+          </Route>
+          <Route path="*">
+            <Link to="/about" className="header-nav-link">
+              <span>
+                About
+              </span>
+            </Link>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/audio-archives">
+            <Link to="/audio-archives" className="header-nav-link active">
+              <span className="bold">
+                Audio<br />Archives
+              </span>
+              <span className="header-nav-link-underline" />
+            </Link>
+          </Route>
+          <Route path="*">
+            <Link to="/audio-archives" className="header-nav-link">
+              <span>
+                Audio<br />Archives
+              </span>
+            </Link>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/ena-calendar">
+            <Link to="/ena-calendar" className="header-nav-link active">
+              <span className="bold">
+                ENA Community<br />Calendar
+              </span>
+              <span className="header-nav-link-underline" />
+            </Link>
+          </Route>
+          <Route path="*">
+            <Link to="/ena-calendar" className="header-nav-link">
+              <span>
+                ENA Community<br />Calendar
+              </span>
+            </Link>
+          </Route>
+        </Switch>        
+        <Switch>
+          <Route path="/tech-calendar">
+            <Link to="/tech-calendar" className="header-nav-link active">
+              <span className="bold">
+                Grand Circus<br />Tech Calendar
+              </span>
+              <span className="header-nav-link-underline" />
+            </Link>
+          </Route>
+          <Route path="*">
+            <Link to="/tech-calendar" className="header-nav-link">
+              <span>
+                Grand Circus<br />Tech Calendar
+              </span>
+            </Link>
+          </Route>
+        </Switch>
       </div>
       <Switch>
         <Route path="/contact">
