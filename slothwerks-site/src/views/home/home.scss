@@ -1,28 +1,47 @@
 .Home {
   display: flex;
-  flex-direction: column;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20%;
 
-  .splash-text {
+  .splash-wrapper {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
-    span {
-      text-align: left;
-      font-family: "Rabbid Highway Sign II";
-      font-size: 1.4rem;
-      margin-bottom: 15px;
+    @media screen and (min-width: 667px) {
+      flex-direction: row-reverse;
     }
-  }
 
-  .splash-logo-container {
-    width: 100%;
-    .splash-logo {
-      width: 100%;
+    .splash-text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      @media screen and (min-width: 667px) {
+        margin-bottom: 130px;
+      }
+      span {
+        text-align: left;
+        font-family: "Rabbid Highway Sign II";
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        @media screen and (min-width: 667px) {
+          font-size: 3.0rem;
+          margin-bottom: 30px;
+        }
+      }
     }
+
+    .splash-logo-container {
+      width: 170px;
+      @media screen and (min-width: 667px) {
+        width: 380px;
+        margin-top: 130px;
+      }
+      .splash-logo {
+        width: 100%;
+      }
+    }
+
   }
 
 }
