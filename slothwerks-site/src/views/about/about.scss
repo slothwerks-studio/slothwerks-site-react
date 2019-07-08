@@ -5,6 +5,10 @@
 
   .content-text-wrapper {
     margin-bottom: 5px;
+    @media screen and (min-width: 667px) {
+      padding: 0 25%;
+      margin-bottom: 30px;
+    }
 
     .content-text {
       font-family: "Open Sans SemiBold";
@@ -13,9 +17,9 @@
       letter-spacing: .03em;
       text-align: left;
       margin-bottom: 30px;
-      .bold {
-        font-family: "Open Sans Bold";
-        font-size: inherit;
+      @media screen and (min-width: 667px) {
+        text-align: center;
+        font-size: 1.0rem;    
       }
       a {
         color: $brownPrimary;
