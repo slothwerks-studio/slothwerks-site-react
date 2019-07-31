@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
     None
 */
 
-export default function ENA_Calendar() {
+export default function ENACalendar() {
 
   return (
     <div className="ENA_Calendar">
@@ -19,7 +19,7 @@ export default function ENA_Calendar() {
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
-          SlothWerks maintains a calendar of family-free (and usually free) community events occurring in the <a href="https://www.eastgategr.com/" target="_blank">Eastgate neighborhood</a> and throughout the city of Grand Rapids, Michigan.
+          SlothWerks maintains a calendar of family-free (and usually free) community events occurring in the <a href="https://www.eastgategr.com/" target="_blank" rel="noopener">Eastgate neighborhood</a> and throughout the city of Grand Rapids, Michigan.
         </p>
       </div>
       <div className="sub-section-wrapper">
@@ -32,63 +32,77 @@ export default function ENA_Calendar() {
         <div className="calendar-button-section">
           <div className="calendar-button-wrapper">
             <div className="calendar-button-text-container">
-              <img
-                className="calendar-button-image"
-                src={require('../../assets/icons/external-link-black.png')} 
-              />
+              <span className="calendar-button-icon">
+                <i className="fas fa-external-link-alt"></i>
+              </span>
               <span className="calendar-button-text">
                 View Event Calendar
               </span>
             </div>
             <button type="button" className="action-button">
-              <a href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank">
+              <a 
+                href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" 
+                target="_blank" 
+                rel="noopener"
+              >
                 View Calendar
               </a>
             </button>
           </div>
           <div className="calendar-button-wrapper">
             <div className="calendar-button-text-container">
-              <img
-                className="calendar-button-image"
-                src={require('../../assets/icons/calendar-add-black.png')} 
-              />
+              <span className="calendar-button-icon">
+                <i className="far fa-calendar-plus"></i>
+              </span>
               <span className="calendar-button-text">
                 Add to Google Calendar
               </span>
             </div>
             <button type="button" className="action-button">
-              <a href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">
+              <a 
+                href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
+                target="_blank" 
+                rel="noopener"
+              >
                 Add
               </a>
             </button>
           </div>
         </div>
-        <div class="calendar-wrapper">
-          <div class="calendar">
-            <div class="controls">
-              <a href="https://calendar.google.com/calendar/embed?src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank" title="Open this calendar in a new window">
-                <img
-                  className="calendar-button-image"
-                  src={require('../../assets/icons/external-link-black.png')} 
-                />
+        <div className="calendar-wrapper">
+          <div className="calendar">
+            <div className="calendar-controls">
+              <a 
+                href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" 
+                target="_blank" 
+                title="Open this calendar in a new window" 
+                rel="noopener"
+              >
+                <span className="calendar-controls-icon">
+                  <i className="fas fa-external-link-alt"></i>
+                </span>
                 New Window
               </a>
-              <a href="https://calendar.google.com/calendar/ical/uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com/public/basic.ics" title="Make these events accessible in your personal calendar">
-                <img
-                  className="calendar-button-image"
-                  src={require('../../assets/icons/calendar-add-black.png')} 
-                />
+              <a 
+                href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
+                title="Make these events accessible in your personal calendar"
+                target="_blank" 
+                rel="noopener"
+              >
+                <span className="calendar-controls-icon">
+                  <i className="far fa-calendar-plus"></i>
+                </span>
                 Add to Calendar
               </a>
             </div>
             <iframe 
-              class="calendar-frame" 
+              className="calendar-frame" 
               src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" 
               width="100%"
               height="600" 
-              frameborder="0" 
-              scrolling="no">
-            </iframe>
+              frameBorder="0" 
+              scrolling="no"
+            />
           </div>
         </div>
       </div>

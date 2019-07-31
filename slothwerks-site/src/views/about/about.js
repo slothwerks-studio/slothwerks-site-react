@@ -19,7 +19,7 @@ export default function About() {
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
-          Located in <a href="https://www.grandrapidsmi.gov/" target="_blank">Grand Rapids, Michigan</a>, SlothWerks provides web and mobile application development and user experience consultation services.
+          Located in <a href="https://www.grandrapidsmi.gov/" target="_blank" rel="noopener">Grand Rapids, Michigan</a>, SlothWerks provides web and mobile application development and user experience consultation services.
         </p>
         <p className="content-text">
           We harness twenty years of technical experience to craft solutions for both commercial and non-profit clients throughout West Michigan.

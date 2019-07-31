@@ -39,7 +39,7 @@ export default function Contact() {
           </a>
         </button>
         <button type="button" className="contact-button">
-          <a href="https://calendly.com/slothwerks/coffee-meeting/" target="_blank">
+          <a href="https://calendly.com/slothwerks/coffee-meeting/" target="_blank" rel="noopener">
             <img
               className="contact-button-icon"
               src={require('../../assets/icons/calendly-black.png')} 
@@ -47,7 +47,7 @@ export default function Contact() {
           </a>
         </button>
         <button type="button" className="contact-button">
-          <a href="https://www.linkedin.com/in/slothwerks/" target="_blank">
+          <a href="https://www.linkedin.com/in/slothwerks/" target="_blank" rel="noopener">
             <img
               className="contact-button-icon"
               src={require('../../assets/icons/linkedin-black.png')} 
@@ -55,7 +55,7 @@ export default function Contact() {
           </a>
         </button>
         <button type="button" className="contact-button">
-          <a href="https://github.com/slothwerks-studio" target="_blank">
+          <a href="https://github.com/slothwerks-studio" target="_blank" rel="noopener">
             <img
               className="contact-button-icon"
               src={require('../../assets/icons/github-black.png')} 
@@ -63,7 +63,7 @@ export default function Contact() {
           </a>
         </button>
         <button type="button" className="contact-button">
-          <a href="https://join.slack.com/t/slothwerks-studio/shared_invite/enQtNTE2MTU0NTkwMDAzLTNkYzhlNGIwMTM2YWU2NWQ0ZWI1MmUxMDFkY2I0NGY3N2EzYmVjNjg2OTlhYmNhZjQwZTBlZDRkMzdiYzQxODQ" target="_blank">
+          <a href="https://join.slack.com/t/slothwerks-studio/shared_invite/enQtNTE2MTU0NTkwMDAzLTNkYzhlNGIwMTM2YWU2NWQ0ZWI1MmUxMDFkY2I0NGY3N2EzYmVjNjg2OTlhYmNhZjQwZTBlZDRkMzdiYzQxODQ" target="_blank" rel="noopener">
             <img
               className="contact-button-icon"
               src={require('../../assets/icons/slack-black.png')} 

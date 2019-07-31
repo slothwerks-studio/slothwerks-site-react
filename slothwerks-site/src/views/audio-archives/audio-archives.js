@@ -12,7 +12,7 @@ import Audio_Archives_Card from './components/audio-archives-card';
     None
 */
 
-export default function Audio_Archives() {
+export default function AudioArchives() {
 
   return (
     <div className="Audio_Archives">

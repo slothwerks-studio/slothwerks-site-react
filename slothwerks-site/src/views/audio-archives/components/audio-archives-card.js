@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
     - audioLocation (String)
 */
 
-export default function Audio_Archives_Card(props) {
+export default function AudioArchivesCard(props) {
 
   return (
     <div className="audio-archives-card-container">
