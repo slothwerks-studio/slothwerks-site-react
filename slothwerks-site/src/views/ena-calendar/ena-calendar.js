@@ -63,6 +63,34 @@ export default function ENA_Calendar() {
             </button>
           </div>
         </div>
+        <div class="calendar-wrapper">
+          <div class="calendar">
+            <div class="controls">
+              <a href="https://calendar.google.com/calendar/embed?src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&ctz=America%2FNew_York" target="_blank" title="Open this calendar in a new window">
+                <img
+                  className="calendar-button-image"
+                  src={require('../../assets/icons/external-link-black.png')} 
+                />
+                New Window
+              </a>
+              <a href="https://calendar.google.com/calendar/ical/uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com/public/basic.ics" title="Make these events accessible in your personal calendar">
+                <img
+                  className="calendar-button-image"
+                  src={require('../../assets/icons/calendar-add-black.png')} 
+                />
+                Add to Calendar
+              </a>
+            </div>
+            <iframe 
+              class="calendar-frame" 
+              src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" 
+              width="100%"
+              height="600" 
+              frameborder="0" 
+              scrolling="no">
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
