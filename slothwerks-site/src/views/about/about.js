@@ -14,8 +14,8 @@ export default function About() {
   return (
     <div className="About">
       <h2 className="page-heading">
-        <span className="page-heading-text">About SlothWerks</span>
-        <span className="page-heading-divider"></span>
+        <span className="heading-text">About SlothWerks</span>
+        <span className="heading-divider"></span>
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
@@ -24,11 +24,11 @@ export default function About() {
         <p className="content-text">
           We harness twenty years of technical experience to craft solutions for both commercial and non-profit clients throughout West Michigan.
         </p>
-      </div>
-      <div className="action-button-wrapper">
-        <button type="button" className="action-button">
-          <Link to="/contact">Contact us!</Link>
-        </button>
+        <div className="action-button-wrapper">
+          <button type="button" className="action-button">
+            <Link to="/contact">Contact us!</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

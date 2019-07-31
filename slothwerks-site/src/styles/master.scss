@@ -33,9 +33,9 @@ body {
   display: none;
 }
 
-/* Page headings */
+/* Headings */
 
-.page-heading {
+h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,29 +46,48 @@ body {
     padding: 0 90px;
   }
 
-  .page-heading-text {
+  .heading-text {
     text-align: center;
     font-family: "Rabbid Highway Sign II";
     font-size: .95rem;
     font-weight: 400;
     letter-spacing: .04rem;
     line-height: 1.5rem;
-    margin: 15px 0;
+    margin: 0 0 15px 0;
     @media screen and (min-width: 667px) {
       font-size: 2.0rem;
-      margin: 60px 0 30px 0;
+      margin: 0 0 30px 0;
       line-height: 3.0rem;
     }
   }
 
-  .page-heading-divider {
+  .heading-divider {
     width: 50px;
     border-bottom: 2px solid $brownLight;
     @media screen and (min-width: 667px) {
       width: 75px;
     }
   }
+}
 
+h2.page-heading {
+  padding-top: 30px;
+  @media screen and (min-width: 667px) {
+    padding-top: 60px;
+  }
+}
+
+h3 {
+  font-family: "Open Sans Bold";
+  font-size: .9rem;
+  line-height: 1.4rem;
+  color: $brownPrimary;
+  margin-bottom: 20px;
+  @media screen and (min-width: 667px) {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $brownPrimary;
+  }
 }
 
 /* Page text content */
@@ -76,6 +95,10 @@ body {
 .content-text-wrapper {
   margin-bottom: 5px;
   padding: 0 30px;
+  @media screen and (min-width: 667px) {
+    padding: 0 25%;
+    margin-bottom: 30px;
+  }
 
   .content-text {
     font-family: "Open Sans SemiBold";
@@ -84,6 +107,10 @@ body {
     letter-spacing: .03em;
     text-align: left;
     margin-bottom: 30px;
+    @media screen and (min-width: 667px) {
+      text-align: center;
+      font-size: 1.0rem;    
+    }
     a {
       color: $brownPrimary;
       font-family: "Open Sans Bold";
@@ -98,13 +125,8 @@ body {
 .sub-section-wrapper {
   background: linear-gradient(180deg, #faf7f4, #ffffff);
   padding: 40px 30px 0 30px;
-
-  .sub-section-heading {
-    font-family: "Open Sans Bold";
-    font-size: .9rem;
-    line-height: 1.4rem;
-    color: $brownPrimary;
-    margin-bottom: 20px;
+  @media screen and (min-width: 667px) {
+    padding: 70px 140px 0 100px;   
   }
 
   .sub-section-text {
@@ -114,6 +136,9 @@ body {
     letter-spacing: .03em;
     text-align: left;
     margin-bottom: 30px;
+    @media screen and (min-width: 667px) {
+      font-size: .9rem;    
+    }
     .bold {
       font-family: "Open Sans Bold";
       font-size: inherit;
@@ -133,6 +158,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  @media screen and (min-width: 667px) {
+    padding: 20px 0;
+  }
 }
 
 .action-button {
@@ -153,5 +183,42 @@ body {
     font-size: .8rem;
     letter-spacing: .05rem;
   }
+}
+
+/* Calendar styles */
+
+.calendar-button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+
+  .calendar-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .calendar-button-text-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      .calendar-button-image {
+        display: inline-block;
+        height: 15px;
+        margin-right: 8px;
+      }
+
+      .calendar-button-text {
+        font-family: "Open Sans Regular";
+        font-size: .8em;
+      }
+
+    }
+
+  }
+
 }
 

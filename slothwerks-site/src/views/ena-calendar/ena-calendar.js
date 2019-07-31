@@ -14,8 +14,8 @@ export default function ENA_Calendar() {
   return (
     <div className="ENA_Calendar">
       <h2 className="page-heading">
-        <span className="page-heading-text">ENA Community Calendar</span>
-        <span className="page-heading-divider"></span>
+        <span className="heading-text">ENA Community Calendar</span>
+        <span className="heading-divider"></span>
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">

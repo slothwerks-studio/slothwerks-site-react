@@ -2,41 +2,5 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-
-  .calendar-button-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-
-    .calendar-button-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 40px;
-
-      .calendar-button-text-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 15px;
-
-        .calendar-button-image {
-          display: inline-block;
-          height: 15px;
-          margin-right: 8px;
-        }
-
-        .calendar-button-text {
-          font-family: "Open Sans Regular";
-          font-size: .8em;
-        }
-
-      }
-
-    }
-
-  }
-  
 }
 

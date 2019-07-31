@@ -13,8 +13,8 @@ export default function Contact() {
   return (
     <div className="Contact">
       <h2 className="page-heading">
-        <span className="page-heading-text">Contact SlothWerks</span>
-        <span className="page-heading-divider"></span>
+        <span className="heading-text">Contact SlothWerks</span>
+        <span className="heading-divider"></span>
       </h2>
       <div className="contact-text-wrapper">
         <p className="contact-text">

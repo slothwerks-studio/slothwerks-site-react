@@ -17,8 +17,8 @@ export default function Audio_Archives() {
   return (
     <div className="Audio_Archives">
       <h2 className="page-heading">
-        <span className="page-heading-text">Audio Archives</span>
-        <span className="page-heading-divider"></span>
+        <span className="heading-text">Audio Archives</span>
+        <span className="heading-divider"></span>
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">

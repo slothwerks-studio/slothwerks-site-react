@@ -14,8 +14,8 @@ export default function Tech_Calendar() {
   return (
     <div className="Tech_Calendar">
       <h2 className="page-heading">
-        <span className="page-heading-text">Grand Circus Tech Calendar</span>
-        <span className="page-heading-divider"></span>
+        <span className="heading-text">Grand Circus Tech Calendar</span>
+        <span className="heading-divider"></span>
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
