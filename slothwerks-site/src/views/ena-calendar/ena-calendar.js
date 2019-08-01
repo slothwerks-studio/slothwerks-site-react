@@ -43,6 +43,7 @@ export default function ENACalendar() {
               <a 
                 href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" 
                 target="_blank" 
+                title="Open this calendar in a new window" 
                 rel="noopener"
               >
                 View Calendar
@@ -62,6 +63,7 @@ export default function ENACalendar() {
               <a 
                 href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
                 target="_blank" 
+                title="Add to Google Calendar"
                 rel="noopener"
               >
                 Add
@@ -85,8 +87,8 @@ export default function ENACalendar() {
               </a>
               <a 
                 href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
-                title="Make these events accessible in your personal calendar"
                 target="_blank" 
+                title="Add to Google Calendar"
                 rel="noopener"
               >
                 <span className="calendar-controls-icon">

@@ -180,9 +180,14 @@ h3 {
     height: 100%;
     width: 100%;
     color: white;
-    font-family: "Open Sans SemiBold";
+    font-family: "Open Sans Bold";
     font-size: .8rem;
     letter-spacing: .05rem;
+    @media screen and (min-width: 667px) {
+      letter-spacing: .03rem;
+      font-size: .9rem;
+    }
+    
   }
 }
 
@@ -228,17 +233,21 @@ h3 {
   display: none;
   @media screen and (min-width: 667px) {
     display: block;
+    padding-top: 30px;
     margin-bottom: 30px;
   }
 
   .calendar { /* Controls width of iframe */
     width: 100%; 
+    // max-width: 1200px;
+    // margin: 0 auto;
     position: relative; /* Needed for controls */
 
     .calendar-controls {
       position: absolute; /* With respect to the calendar container */
       top: 0;
       right: 0;
+      padding-right: 3px;
       a {
         font-size: .8rem;
         font-weight: bold;

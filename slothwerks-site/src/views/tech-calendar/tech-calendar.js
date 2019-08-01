@@ -24,7 +24,7 @@ export default function TechCalendar() {
       </div>
       <div className="sub-section-wrapper">
         <h3 className="sub-section-heading">
-          About the Grand Circus
+          About Grand Circus
         </h3>
         <p className="sub-section-text">
           Grand Circus is a tech career training organization based in Detroit, Michigan.  They also maintain a campus at <a href="http://startgarden.com/" target="_blank" rel="noopener">Start Garden</a> in Grand Rapids.
@@ -43,6 +43,7 @@ export default function TechCalendar() {
               <a 
                 href="https://calendar.google.com/calendar/embed?src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&ctz=America%2FNew_York" 
                 target="_blank" 
+                title="Open this calendar in a new window"
                 rel="noopener"
               >
                 View Calendar
@@ -62,11 +63,48 @@ export default function TechCalendar() {
               <a 
                 href="https://calendar.google.com/calendar?cid=dWhqNmI5cTM1Z3RyNWM2MG1sN3V0c2lkODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
                 target="_blank" 
+                title="Add to Google Calendar"
                 rel="noopener"
               >
                 Add
               </a>
             </button>
+          </div>
+        </div>
+        <div className="calendar-wrapper">
+          <div className="calendar">
+            <div className="calendar-controls">
+              <a 
+                href="https://calendar.google.com/calendar/embed?src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&ctz=America%2FNew_York" 
+                target="_blank" 
+                title="Open this calendar in a new window" 
+                rel="noopener"
+              >
+                <span className="calendar-controls-icon">
+                  <i className="fas fa-external-link-alt"></i>
+                </span>
+                New Window
+              </a>
+              <a 
+                href="https://calendar.google.com/calendar?cid=dWhqNmI5cTM1Z3RyNWM2MG1sN3V0c2lkODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
+                target="_blank" 
+                title="Add to Google Calendar"
+                rel="noopener"
+              >
+                <span className="calendar-controls-icon">
+                  <i className="far fa-calendar-plus"></i>
+                </span>
+                Add to Calendar
+              </a>
+            </div>
+            <iframe 
+              className="calendar-frame" 
+              src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York"
+              width="100%"
+              height="600" 
+              frameBorder="0" 
+              scrolling="no"
+            />
           </div>
         </div>
       </div>
