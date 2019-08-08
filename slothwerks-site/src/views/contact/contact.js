@@ -16,8 +16,8 @@ export default function Contact() {
         <span className="heading-text">Contact SlothWerks</span>
         <span className="heading-divider"></span>
       </h2>
-      <div className="contact-text-wrapper">
-        <p className="contact-text">
+      <div className="content-text-wrapper">
+        <p className="content-text">
           Contact SlothWerks by phone at <a href="tel:+16162586179">616.258.6179</a> or by email at <a href="mailto:contact@slothwerks.com">contact@slothwerks.com</a>.
         </p>
       </div>
