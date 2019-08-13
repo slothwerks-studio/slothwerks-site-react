@@ -6,11 +6,18 @@
   align-items: center;
   margin-bottom: 10px;
   background-color: white;
+  @media screen and (min-width: 667px) {
+    width: 48.5%;
+    margin-bottom: calc((100%)*.03);
+  }
 
   .audio-archives-card-info-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    @media screen and (min-width: 667px) {
+      padding: 30px;
+    }
   }
   
   .audio-archives-card-image-container {
@@ -21,28 +28,55 @@
     }
   }
 
-  .audio-archives-card-info {
+  .audio-archives-card-info-wrapper {
     display: flex;
     flex: 3;
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 10px;
-    .audio-archives-card-title {
-      font-family: "Rabbid Highway Sign II";
-      color: $brownPrimary;
-      font-size: .8rem;
-      letter-spacing: .04rem;
-      line-height: 1.2rem;        
+    @media screen and (min-width: 667px) {
+      flex-direction: column;
     }
-    .audio-archives-info-text {
-      font-size: .8rem;
-      font-family: "Open Sans Regular";
-      line-height: 1.0rem; 
+
+    .audio-archives-card-info {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      margin-bottom: 10px;
+      @media screen and (min-width: 667px) {
+        margin-bottom: 30px;
+      }   
+      .audio-archives-card-title {
+        font-family: "Rabbid Highway Sign II";
+        color: $brownPrimary;
+        font-size: .8rem;
+        letter-spacing: .04rem;
+        line-height: 1.2rem;   
+        @media screen and (min-width: 667px) {
+          font-size: .9rem;
+          letter-spacing: .04rem;
+          line-height: 1.5rem;
+        }     
+      }
+      .audio-archives-info-text {
+        font-size: .8rem;
+        font-family: "Open Sans Regular";
+        line-height: 1.0rem; 
+      }
     }
+
+    .audio-player-inside {
+      display: none;
+      @media screen and (min-width: 667px) {
+        display: initial;
+      }
+    }
+
   }
 
-  .audio-player {
+  .audio-player-outside {
     margin-bottom: 10px;
+    @media screen and (min-width: 667px) {
+      display: none;
+    }
   }
 
 }
