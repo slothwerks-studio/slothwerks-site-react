@@ -64,9 +64,24 @@
 
     .contact-icon-container {
       margin: 0;
+      position: relative; /* For absolutely positioned icons */
       .contact-icon {
         height: 60px;
         width: 60px;
+        &.hover {
+          position: absolute; /* Take out of normal flow */
+          left: 0;
+          opacity: 0;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &.nohover {
+          opacity: 1;
+          &:hover {
+            opacity: 0;
+          }
+        }
       }
     }
 
