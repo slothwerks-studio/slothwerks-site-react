@@ -53,6 +53,12 @@
         margin-bottom: 6px; /* Compensating for underline */
         &.active {
           margin-bottom: 0;
+          &:hover {
+            color: black;
+          }
+        }
+        &:hover {
+          color: $brownDarker;
         }
         .header-nav-link-underline {
           margin-top: 5px;
