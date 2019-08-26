@@ -9,6 +9,7 @@
   overflow: hidden;
   background-color: $purpleDarker;
   &.visible {
+    transition: height .1s;
     height: 100vh;
   }
 
