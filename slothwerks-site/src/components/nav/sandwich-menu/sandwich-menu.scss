@@ -1,9 +1,16 @@
 .SandwichMenu {
-  position: fixed;
-  top: 0; right: 0; left: 0; bottom: 0;
+  // position: fixed;
+  // top: 0; right: 0; left: 0; bottom: 0;
+  position: absolute;
+  bottom: 0;
+  height: 0vh;
+  width: 100vw;
   z-index: 99;
   overflow: hidden;
   background-color: $purpleDarker;
+  &.visible {
+    height: 100vh;
+  }
 
   .sandwich-menu-container {
     height: 100%;

@@ -7,13 +7,17 @@ import { Link } from "react-router-dom";
     sandwhich menu icon is pressed.
 
   Incoming Props:
+    - visibility ... a boolean value which determines whether or not the menu is shown in the UI
     - toggleSandwichMenu ... a callback function which opens or closes the sandwich menu
 */
 
 export default function SandwichMenu(props) {
 
+  // Build dynamic class name for menu based on props
+  const menuClass = (props.visibility ? "SandwichMenu visible" : "SandwichMenu");
+
   return (
-    <div className="SandwichMenu">
+    <div className={menuClass}>
       <div className="sandwich-menu-container">
 
         <div className="sandwich-menu-header">

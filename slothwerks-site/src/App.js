@@ -30,11 +30,15 @@ export default function App() {
   return (
     <Fragment>
       {/* Insert absolutely-positioned sandwich menu here */}
-      { (showSandwichMenu) ?
+      <SandwichMenu 
+        visibility={showSandwichMenu}
+        toggleSandwichMenu={toggleSandwichMenu} 
+      />
+      {/* (showSandwichMenu) ?
         <SandwichMenu toggleSandwichMenu={toggleSandwichMenu} />
       :
         null
-      }
+      */}
       {/* Insert sticky header here */}
       <Header toggleSandwichMenu={toggleSandwichMenu} />
       {/* Insert router here */}
