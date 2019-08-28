@@ -58,6 +58,7 @@
           }
         }
         &:hover {
+          transition: color .25s;
           color: $brownDarker;
         }
         .header-nav-link-underline {

@@ -34,11 +34,6 @@ export default function App() {
         visibility={showSandwichMenu}
         toggleSandwichMenu={toggleSandwichMenu} 
       />
-      {/* (showSandwichMenu) ?
-        <SandwichMenu toggleSandwichMenu={toggleSandwichMenu} />
-      :
-        null
-      */}
       {/* Insert sticky header here */}
       <Header toggleSandwichMenu={toggleSandwichMenu} />
       {/* Insert router here */}
