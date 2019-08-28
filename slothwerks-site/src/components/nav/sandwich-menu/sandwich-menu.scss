@@ -6,11 +6,14 @@
   height: 0vh;
   width: 100vw;
   z-index: 99;
+  opacity: 0;
   overflow: hidden;
   background-color: $purpleDarker;
+  transition: opacity .15s;
   &.visible {
-    transition: height .1s;
+    transition: opacity .15s;
     height: 100vh;
+    opacity: 1;
   }
 
   .sandwich-menu-container {
