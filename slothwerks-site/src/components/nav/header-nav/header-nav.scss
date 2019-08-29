@@ -87,14 +87,6 @@
             opacity: 1;
           }
         }
-        &.nohover {
-          opacity: 1;
-          transition: opacity .15s;
-          &:hover {
-            transition: opacity .15s;
-            opacity: 0;
-          }
-        }
       }
     }
 

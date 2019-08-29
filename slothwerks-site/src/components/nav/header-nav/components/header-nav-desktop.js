@@ -95,7 +95,7 @@ export default function HeaderNavDesktop(props) {
         <Route path="*">
           <Link to="/contact" className="contact-icon-container">
             <img 
-              className="contact-icon nohover"
+              className="contact-icon"
               src={require('../../../../assets/icons/contact-purple-filled.png')} 
             />
             <img 

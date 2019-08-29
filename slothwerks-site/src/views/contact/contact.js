@@ -24,9 +24,13 @@ export default function Contact() {
       <div className="contact-buttons-wrapper">
         <button type="button" className="contact-button">
           <a href="tel:+16162586179">
-            <img
+            <img 
               className="contact-button-icon"
               src={require('../../assets/icons/call-black.png')} 
+            />
+            <img 
+              className="contact-button-icon hover"
+              src={require('../../assets/icons/call-brown.png')} 
             />
           </a>
         </button>
