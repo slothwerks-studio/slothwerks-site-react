@@ -24,54 +24,86 @@ export default function Contact() {
       <div className="contact-buttons-wrapper">
         <button type="button" className="contact-button">
           <a href="tel:+16162586179">
-            <img 
-              className="contact-button-icon"
-              src={require('../../assets/icons/call-black.png')} 
-            />
-            <img 
-              className="contact-button-icon hover"
-              src={require('../../assets/icons/call-brown.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/call-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/call-brown.png')} 
+              />
+            </span>
           </a>
         </button>
         <button type="button" className="contact-button">
           <a href="mailto:contact@slothwerks.com">
-            <img
-              className="contact-button-icon"
-              src={require('../../assets/icons/email-black.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/email-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/email-brown.png')} 
+              />
+            </span>
           </a>
         </button>
         <button type="button" className="contact-button">
           <a href="https://calendly.com/slothwerks/coffee-meeting/" target="_blank" rel="noopener">
-            <img
-              className="contact-button-icon"
-              src={require('../../assets/icons/calendly-black.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/calendly-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/calendly-brown.png')} 
+              />
+            </span>
           </a>
         </button>
         <button type="button" className="contact-button">
           <a href="https://www.linkedin.com/in/slothwerks/" target="_blank" rel="noopener">
-            <img
-              className="contact-button-icon"
-              src={require('../../assets/icons/linkedin-black.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/linkedin-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/linkedin-brown.png')} 
+              />
+            </span>
           </a>
         </button>
         <button type="button" className="contact-button">
           <a href="https://github.com/slothwerks-studio" target="_blank" rel="noopener">
-            <img
-              className="contact-button-icon"
-              src={require('../../assets/icons/github-black.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/github-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/github-brown.png')} 
+              />
+            </span>
           </a>
         </button>
         <button type="button" className="contact-button">
           <a href="https://join.slack.com/t/slothwerks-studio/shared_invite/enQtNTE2MTU0NTkwMDAzLTNkYzhlNGIwMTM2YWU2NWQ0ZWI1MmUxMDFkY2I0NGY3N2EzYmVjNjg2OTlhYmNhZjQwZTBlZDRkMzdiYzQxODQ" target="_blank" rel="noopener">
-            <img
-              className="contact-button-icon"
-              src={require('../../assets/icons/slack-black.png')} 
-            />
+            <span className="contact-button-icon-container">
+              <img 
+                className="contact-button-icon"
+                src={require('../../assets/icons/slack-black.png')} 
+              />
+              <img 
+                className="contact-button-icon hover"
+                src={require('../../assets/icons/slack-brown.png')} 
+              />
+            </span>
           </a>
         </button>
       </div>

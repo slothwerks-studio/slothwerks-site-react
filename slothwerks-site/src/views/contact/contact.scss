@@ -37,56 +37,30 @@
       }
       
       a {
-        position: relative; /* For absolutely positioned icons */
         height: 100%;
         width: 100%;
         padding: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        .contact-button-icon {
-          width: 100%;
-          &.hover {
-            position: absolute; /* Take out of normal flow */
-            left: 0;
-            opacity: 0;
-            transition: opacity .15s;
-            &:hover {
+        
+        .contact-button-icon-container {
+          position: relative; /* For absolutely positioned icons */
+          .contact-button-icon {
+            width: 50px; /* Height should adjust automatically */
+            &.hover {
+              position: absolute; /* Take out of normal flow */
+              left: 0;
+              opacity: 0;
               transition: opacity .15s;
-              opacity: 1;
+              &:hover {
+                transition: opacity .15s;
+                opacity: 1;
+              }
             }
           }
         }
-
       }
-
-          .contact-icon-container {
-      margin: 0;
-      position: relative; /* For absolutely positioned icons */
-      .contact-icon {
-        height: 60px;
-        width: 60px;
-        &.hover {
-          position: absolute; /* Take out of normal flow */
-          left: 0;
-          opacity: 0;
-          transition: opacity .15s;
-          &:hover {
-            transition: opacity .15s;
-            opacity: 1;
-          }
-        }
-        &.nohover {
-          opacity: 1;
-          transition: opacity .15s;
-          &:hover {
-            transition: opacity .15s;
-            opacity: 0;
-          }
-        }
-      }
-    }
 
     }
 
