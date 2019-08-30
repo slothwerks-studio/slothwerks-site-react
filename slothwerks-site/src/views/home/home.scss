@@ -8,7 +8,11 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 667px) {
+    padding: 30px 0;
+    @media screen and (min-width: 414px) {
+      padding: 60px 0;
+    }
+    @media screen and (min-width: 1024px) {
       flex-direction: row-reverse;
     }
 
@@ -16,7 +20,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 15px;
-      @media screen and (min-width: 667px) {
+      @media screen and (min-width: 1024px) {
         margin-bottom: 130px;
       }
       span {
@@ -24,16 +28,22 @@
         font-family: "Rabbid Highway Sign II";
         font-size: 1.4rem;
         margin-bottom: 15px;
-        @media screen and (min-width: 667px) {
-          font-size: 3.0rem;
+        @media screen and (min-width: 414px) {
+          font-size: 2.0rem;
           margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 3.0rem;
         }
       }
     }
 
     .splash-logo-container {
       width: 170px;
-      @media screen and (min-width: 667px) {
+      @media screen and (min-width: 414px) {
+        width: 250px;
+      }
+      @media screen and (min-width: 1024px) {
         width: 380px;
         margin-top: 130px;
       }

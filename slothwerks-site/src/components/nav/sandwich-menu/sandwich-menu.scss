@@ -31,18 +31,29 @@
       align-items: center;
       padding: 0 30px;
       margin-bottom: 15px;
+      @media screen and (min-width: 414px) {
+        height: 80px;
+      }
     
       .header-logo-container {
         font-family: "Rabbid Highway Sign II";
         font-size: 1rem;
         letter-spacing: .05rem;
         color: white;
+        @media screen and (min-width: 414px) {
+          font-size: 1.5rem;
+          letter-spacing: .075rem;
+        }
       }
 
       .close-icon-container {
         .close-icon {
           height: 30px;
           width: 30px;
+          @media screen and (min-width: 414px) {
+            height: 40px;
+            width: 40px;
+          }
         }
       }
 
@@ -85,6 +96,10 @@
       .copyright {
         font-size: .8rem;
         color: white;
+        @media screen and (min-width: 414px) {
+          font-size: .9rem;
+          font-family: "Open Sans SemiBold"
+        }
       }
     }
 
