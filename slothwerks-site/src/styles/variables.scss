@@ -9,4 +9,63 @@
 1366px ... widescreen desktop
 1920px ... high-definition display
 
+First visual breakpoint:  414px
+  - Header / Footer
+    * Header height increases from 60px to 80px 
+      (affects sandwich menu as well)
+    * SlothWerks header font increases from 1rem to 1.5rem
+      (affects sandwich menu as well)
+    * Header mobile icons for contact page and sandwich menu
+      increase in size from 30px to 40px width
+    * Footer font size increases from .8rem to .9 rem
+  - Home Page
+    * Padding for home logo image increases from 30px to 60px
+    * Width of home logo image increases from 170px to 250px
+    * Home page splash text size increases from 1.4rem to 2.0rem 
+  - Content Pages
+    * Heading text increases from .95rem to 1.4rem
+    * Heading bottom margin increases from 15px to 20px
+    * Heading text line-height increases from 1.5rem to 2.0rem
+    * Heading divider line width increases from 50px to 60px
+    * Sub-section heading font size increases from .9rem to 1.0rem
+    * Sub-section top padding increases from 40px to 50px
+    * Sub-section paragraph text increases from .8rem to .85rem
+    * Paragraph bottom margin increases from 5px to 20px
+    * Font size increases from .8rem to .9rem
+    * Button padding increases from 10px to 15px
+    * Button font increases from .8rem to .85rem
+
+Second video breakpoint:  1024px
+  - Header / Footer
+    * Header height increases from 80px to 100px
+    * Slothwerks header font increases from 1.5rem to 2.0rem
+    * Header mobile icons for contact page and sandwich menu
+      increase in size from 40px to 60px width
+    * Footer height increases from 60px to 100px
+    * Footer text becomes left-aligned (versus centered)
+    * Horizontal padding increases from 30px to 100px
+      (this affects the header, footer, and page content)
+  - Home Page
+    * Orientation of home logo image and text shifts to
+      row-reverse instead of column
+    * Width of home logo image increases from 250px to 380px
+    * Home page splash text size increases from 2.0rem to 3.0rem 
+  - Content Pages
+    * Heading text increases from 1.4rem to 2.0rem
+    * Heading bottom margin increases from 20px to 30px
+    * Heading text line-height increases from 2.0rem to 3.0rem
+    * Heading divider line width increases from 60px to 75px
+    * Sub-section heading font size increases from 1.0rem to 1.1rem
+    * Sub-section heading line-height increases from 1.4rem to 1.5rem
+    * Sub-section top padding increases from 50px to 60px
+    * Sub-section paragraph text increases from .85rem to .9rem
+    * Sub-section paragraph width decreases to 50% screen width
+      (but still left-aligned)
+    * Paragraph bottom margin increases from 20px to 30px
+    * Paragraph text alignment switches to centered from left;
+      hoizontal padding switches from 30px to 25% screen width
+    * Font size increases from .9rem to 1.0rem
+    * Button padding increases from 15px to 20px
+    * Button font increases from .85rem to .9rem
+
 */
