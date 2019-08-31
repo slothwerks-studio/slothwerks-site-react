@@ -56,7 +56,7 @@ export default function AudioArchives() {
         <Audio_Archives_Card
           image={require("../../assets/images/arco-iris.jpg")}
           imgAlt="Dimly-lit room with people and equipment"
-          title="1001 Arabian Nights"
+          title="Sloth and Eric Newton Live at Arco Iris"
           releaseDate="1999"
           totalTime="70 minutes"
           audioLocation="https://www.slothwerks.com/media/new/live-at-arco-iris.mp3"
