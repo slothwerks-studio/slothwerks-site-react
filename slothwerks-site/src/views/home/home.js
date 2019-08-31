@@ -10,6 +10,9 @@ import React, { useState, Fragment } from 'react';
 
 export default function Home() {
 
+  // Set initial state
+  // (No initial state)
+
   return (
     <div className="Home">
       <div className="splash-wrapper">

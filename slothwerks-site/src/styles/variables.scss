@@ -32,8 +32,12 @@ First visual breakpoint:  414px
     * Sub-section paragraph text increases from .8rem to .85rem
     * Paragraph bottom margin increases from 5px to 20px
     * Font size increases from .8rem to .9rem
-    * Button padding increases from 10px to 15px
+    * Button vertical padding increases from 10px to 15px
     * Button font increases from .8rem to .85rem
+
+Calendar-specific breakpoint:  667px
+  - Calendar Pages
+    * Calendar button sections replaced with actual Google calendar
 
 Second video breakpoint:  1024px
   - Header / Footer
@@ -65,7 +69,12 @@ Second video breakpoint:  1024px
     * Paragraph text alignment switches to centered from left;
       hoizontal padding switches from 30px to 25% screen width
     * Font size increases from .9rem to 1.0rem
-    * Button padding increases from 15px to 20px
+    * Button vertical padding increases from 15px to 20px
     * Button font increases from .85rem to .9rem
+
+Calendar-specific breakpoint:  1366px
+  - Calendar Pages
+    * Calendar iframe height increases from 600px to 800px
+
 
 */

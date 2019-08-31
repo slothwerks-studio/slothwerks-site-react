@@ -11,6 +11,9 @@ import { Link } from "react-router-dom";
 
 export default function About() {
 
+  // Set initial state
+  // (No initial state)
+
   return (
     <div className="About">
       <h2 className="page-heading">

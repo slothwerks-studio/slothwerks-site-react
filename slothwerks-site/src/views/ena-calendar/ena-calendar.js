@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from "react-router-dom";
 
 /* 
@@ -10,6 +10,42 @@ import { Link } from "react-router-dom";
 */
 
 export default function ENACalendar() {
+
+  // Set initial state
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [calendarFrameHeight, setCalendarFrameHeight] = useState(600);
+
+  // We are controlling the width of the calendar iframe using
+  // a wrapping DIV; height is controlled via JavaScript.
+
+  // Add listener for window width after mounting; 
+  // add returned function to remove listender upon unmounting
+  useEffect(() => {
+    // Define function to pass into event listener
+    function updateWindowWidth() {
+      setWindowWidth(window.innerWidth);
+    }
+    // Define listener removal function
+    function removeListener() {
+      window.removeEventListener("resize", updateWindowWidth);
+    }
+    // Add window event listener for resizing of window;
+    // will fire updateWindowWidth each time window size changes
+    window.addEventListener("resize", updateWindowWidth);
+    // Return listener removal function
+    return removeListener;
+  }, []);
+
+  // Add useEffect that will run when windowWidth is updated
+  // This will update the calendar height dynamically
+  useEffect(() => {
+    // Use 1366px as breakpoint for calendar height update
+    let calendarHeight = 600;
+    if (windowWidth >= 1366) {
+      calendarHeight = 800;
+    }
+    setCalendarFrameHeight(calendarHeight);
+  }, [windowWidth]);
 
   return (
     <div className="ENA_Calendar">
@@ -101,7 +137,7 @@ export default function ENACalendar() {
               className="calendar-frame" 
               src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" 
               width="100%"
-              height="600" 
+              height={calendarFrameHeight}
               frameBorder="0" 
               scrolling="no"
             />

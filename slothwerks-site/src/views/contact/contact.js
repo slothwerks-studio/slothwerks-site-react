@@ -10,6 +10,9 @@ import React, { useState, Fragment } from 'react';
 
 export default function Contact() {
 
+  // Set initial state
+  // (No initial state)
+
   return (
     <div className="Contact">
       <h2 className="page-heading">
