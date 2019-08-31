@@ -1,7 +1,5 @@
 .Contact {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  @include page-content-container;
   padding-bottom: 0; // Override due to contact buttons
 
   .content-text {

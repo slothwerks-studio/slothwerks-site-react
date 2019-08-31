@@ -1,7 +1,5 @@
 .Audio_Archives {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  @include page-content-container;
 
   .audio-archives-wrapper {
     background: linear-gradient(180deg, #faf7f4, #ffffff);

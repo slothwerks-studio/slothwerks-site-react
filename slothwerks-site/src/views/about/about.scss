@@ -1,6 +1,4 @@
 .About {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  @include page-content-container;
 }
 
