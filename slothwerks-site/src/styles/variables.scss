@@ -50,6 +50,9 @@ Audio Archives-specific breakpoint:  480px
 Calendar-specific breakpoint:  667px
   - Calendar button sections replaced with actual Google calendar
 
+Contact-specific breakpoint:  667px
+  - Contact icon grid flips from 2x3 to 3x2
+
 Second visual breakpoint:  1024px
   - Header / Footer
     * Header height increases from 80px to 100px
@@ -91,6 +94,8 @@ Second visual breakpoint:  1024px
     * Audio archives card bottom margin increases from 10px to roughly 30px
     * Audio archives card image width reduced from 110px to 90px
     * Audio player is rendered underneath to archive card image rather than beside it
+  - Contact
+    * Contact icons lose surrounding border / margins and are rendered in a single line
 
 Third visual breakpoint:  1366px
   - Calendar Pages
