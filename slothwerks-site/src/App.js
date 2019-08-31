@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import { Route, Switch, Link } from "react-router-dom";
 
 // Import router
 import Router from './router/router';

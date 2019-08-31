@@ -1,5 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 
 /* 
   Component Description:
@@ -55,7 +54,7 @@ export default function ENACalendar() {
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
-          SlothWerks maintains a calendar of family-free (and usually free) community events occurring in the <a href="https://www.eastgategr.com/" target="_blank" rel="noopener">Eastgate neighborhood</a> and throughout the city of Grand Rapids, Michigan.
+          SlothWerks maintains a calendar of family-free (and usually free) community events occurring in the <a href="https://www.eastgategr.com/" target="_blank" rel="noopener noreferrer">Eastgate neighborhood</a> and throughout the city of Grand Rapids, Michigan.
         </p>
       </div>
       <div className="sub-section-wrapper">
@@ -80,7 +79,7 @@ export default function ENACalendar() {
                 href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" 
                 target="_blank" 
                 title="Open this calendar in a new window" 
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 View Calendar
               </a>
@@ -100,7 +99,7 @@ export default function ENACalendar() {
                 href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
                 target="_blank" 
                 title="Add to Google Calendar"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Add
               </a>
@@ -114,7 +113,7 @@ export default function ENACalendar() {
                 href="https://calendar.google.com/calendar/embed?src=g0kdapqkqpi4h880u3gnbtg7qg%40group.calendar.google.com&ctz=America%2FNew_York" 
                 target="_blank" 
                 title="Open this calendar in a new window" 
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <span className="calendar-controls-icon">
                   <i className="fas fa-external-link-alt"></i>
@@ -125,7 +124,7 @@ export default function ENACalendar() {
                 href="https://calendar.google.com/calendar?cid=ZzBrZGFwcWtxcGk0aDg4MHUzZ25idGc3cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
                 target="_blank" 
                 title="Add to Google Calendar"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <span className="calendar-controls-icon">
                   <i className="far fa-calendar-plus"></i>
@@ -134,6 +133,7 @@ export default function ENACalendar() {
               </a>
             </div>
             <iframe 
+              title="ENA Community Calendar"
               className="calendar-frame" 
               src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York" 
               width="100%"

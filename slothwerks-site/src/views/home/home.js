@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 
 /* 
   Component Description:
@@ -25,6 +25,7 @@ export default function Home() {
           <img
             className="splash-logo"
             src={require('../../assets/images/logo-image-only.png')} 
+            alt="SlothWerks Logo"
           />
         </div>
       </div>

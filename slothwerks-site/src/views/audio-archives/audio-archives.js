@@ -1,8 +1,7 @@
-import React, { useState, Fragment } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 
 // Import components
-import Audio_Archives_Card from './components/audio-archives-card';
+import AudioArchivesCard from './components/audio-archives-card';
 
 /* 
   Component Description:
@@ -29,7 +28,7 @@ export default function AudioArchives() {
         </p>
       </div>
       <div className="audio-archives-wrapper">
-        <Audio_Archives_Card
+        <AudioArchivesCard
           image={require("../../assets/images/hack-show-2016.jpg")}
           imgAlt="Turntable and mixing board"
           title="The Sloth Psychedelic HACK! Show (2016 Vinyl Edition)"
@@ -37,7 +36,7 @@ export default function AudioArchives() {
           totalTime="46 minutes"
           audioLocation="https://www.slothwerks.com/media/new/sloth-psychedelic-hack-show-2016.mp3"
         />
-        <Audio_Archives_Card
+        <AudioArchivesCard
           image={require("../../assets/images/psychedelic-breakfast.jpg")}
           imgAlt="Man eating stack of compact discs"
           title="Sloth's Psychedelic Breakfast"
@@ -45,7 +44,7 @@ export default function AudioArchives() {
           totalTime="55 minutes"
           audioLocation="https://www.slothwerks.com/media/new/sloth-psychedelic-breakfast.mp3"
         />
-        <Audio_Archives_Card
+        <AudioArchivesCard
           image={require("../../assets/images/arabian-nights.jpg")}
           imgAlt="Illustration of dancing women"
           title="1001 Arabian Nights"
@@ -53,7 +52,7 @@ export default function AudioArchives() {
           totalTime="55 minutes"
           audioLocation="https://www.slothwerks.com/media/new/1001-arabian-nights.mp3"
         />
-        <Audio_Archives_Card
+        <AudioArchivesCard
           image={require("../../assets/images/arco-iris.jpg")}
           imgAlt="Dimly-lit room with people and equipment"
           title="Sloth and Eric Newton Live at Arco Iris"

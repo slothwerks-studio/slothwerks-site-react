@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 
 /* 
@@ -89,6 +89,7 @@ export default function HeaderNavDesktop(props) {
             <img 
               className="contact-icon"
               src={require('../../../../assets/icons/contact-purple-hollow.png')} 
+              alt="Contact SlothWerks"
             />
           </span>
         </Route>
@@ -97,10 +98,12 @@ export default function HeaderNavDesktop(props) {
             <img 
               className="contact-icon"
               src={require('../../../../assets/icons/contact-purple-filled.png')} 
+              alt="Contact SlothWerks"
             />
             <img 
               className="contact-icon hover"
               src={require('../../../../assets/icons/contact-purple-hollow.png')} 
+              alt="Contact SlothWerks"
             />
           </Link>
         </Route>

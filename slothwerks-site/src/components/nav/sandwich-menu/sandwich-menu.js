@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 /* 
@@ -35,6 +35,7 @@ export default function SandwichMenu(props) {
             <img 
               className="close-icon"
               src={require('../../../assets/icons/close-white.png')} 
+              alt="Close navigation menu"
             />
           </span>
         </div>

@@ -1,5 +1,4 @@
-import React, { useState, Fragment } from 'react';
-import { Route, Switch, Link } from "react-router-dom";
+import React from 'react';
 
 // Import header navigation for various viewports
 import HeaderNavMobile from './components/header-nav-mobile';

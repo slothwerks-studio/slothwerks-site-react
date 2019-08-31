@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 
 /* 
@@ -19,6 +19,7 @@ export default function HeaderNavMobile(props) {
             <img 
               className="contact-icon"
               src={require('../../../../assets/icons/contact-purple-hollow.png')} 
+              alt="Contact SlothWerks"
             />
           </span>
         </Route>
@@ -27,6 +28,7 @@ export default function HeaderNavMobile(props) {
             <img 
               className="contact-icon"
               src={require('../../../../assets/icons/contact-purple-filled.png')} 
+              alt="Contact SlothWerks"
             />
           </Link>
         </Route>
@@ -38,6 +40,7 @@ export default function HeaderNavMobile(props) {
         <img 
           className="sandwich-menu-icon"
           src={require('../../../../assets/icons/sandwich-menu-black.png')} 
+          alt="Open navigation menu"
         />
       </span>
     </nav>
