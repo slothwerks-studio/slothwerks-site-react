@@ -1,7 +1,8 @@
 .Tech_Calendar {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
+  @include page-content-container;
+  /* Override bottom padding due to existing padding + margin */
+  @media screen and (max-width: 667px) {
+    padding-bottom: 0; 
+  }
 }
 

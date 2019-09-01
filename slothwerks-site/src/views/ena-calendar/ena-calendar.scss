@@ -1,3 +1,7 @@
 .ENA_Calendar {
   @include page-content-container;
+  /* Override bottom padding due to existing padding + margin */
+  @media screen and (max-width: 667px) {
+    padding-bottom: 0; 
+  }
 }

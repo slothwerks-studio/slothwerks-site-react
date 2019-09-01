@@ -38,7 +38,7 @@ export default function App() {
       {/* Insert router here */}
       <Router />
       {/* Insert footer here */}
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 

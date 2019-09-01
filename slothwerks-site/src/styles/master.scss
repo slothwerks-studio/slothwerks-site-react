@@ -1,20 +1,22 @@
 /* Master structural styles */
 
 /* Force viewport to take up full height and width of viewport */
-html {
-  width: 100vw;
-  height: 100vh;
-}
+/* This tactic absolutely breaks the website in certain browsers */
 
-body {
-  width: 100%;
-  height: 100%;
-}
+// html {
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// body {
+//   width: 100%;
+//   height: 100%;
+// }
 
 #root {
   @include open-sans-regular;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -22,8 +24,12 @@ body {
 @mixin page-content-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
+  padding-bottom: 30px;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 60px;
+  }
+  // flex-grow: 1;
+  // flex-shrink: 1;
 }
 
 .bold {
