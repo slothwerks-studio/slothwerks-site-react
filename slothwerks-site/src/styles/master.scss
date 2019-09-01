@@ -121,7 +121,8 @@ h3 {
 /* Page text content */
 
 .content-text-wrapper {
-  margin: 0 auto 5px auto;
+  margin: 0 auto;
+  margin-bottom: 5px;
   padding: 0 30px;
   max-width: 700px;
   @media screen and (min-width: 414px) {
