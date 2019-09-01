@@ -1,11 +1,7 @@
 .Home {
   @include page-content-container;
-  display: flex;
   justify-content: center;
   align-items: center;
-  /* Expand home screen to full size of viewport to center logo */
-  // flex-grow: 1;
-  // flex-shrink: 1;
 
   .splash-wrapper {
     width: 100%;
