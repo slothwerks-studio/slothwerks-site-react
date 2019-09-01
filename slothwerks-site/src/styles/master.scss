@@ -12,7 +12,7 @@ body {
 }
 
 #root {
-  font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
+  @include open-sans-regular;
   width: 100%;
   height: 100%;
   display: flex;
@@ -27,12 +27,12 @@ body {
 }
 
 .bold {
-  font-family: "Open Sans Bold";
+  @include open-sans-semibold;
   font-size: inherit;
 }
 
 .italic {
-  font-family: "Open Sans Italic";
+  @include open-sans-italic;
   font-size: inherit;
 }
 
@@ -104,7 +104,7 @@ h2.page-heading {
 }
 
 h3 {
-  font-family: "Open Sans Bold";
+  @include open-sans-semibold;
   font-size: .9rem;
   line-height: 1.4rem;
   color: $brownPrimary;
@@ -133,7 +133,7 @@ h3 {
   }
 
   .content-text {
-    font-family: "Open Sans SemiBold";
+    @include open-sans-semibold;
     font-size: .8rem;
     line-height: 1.7rem;
     letter-spacing: .03rem;
@@ -147,8 +147,8 @@ h3 {
       font-size: 1.0rem;    
     }
     a {
+      @include open-sans-semibold;
       color: $brownPrimary;
-      font-family: "Open Sans Bold";
       font-size: inherit;
     }
   }
@@ -168,7 +168,7 @@ h3 {
   }
 
   .sub-section-text {
-    font-family: "Open Sans Regular";
+    @include open-sans-regular;
     font-size: .8rem;
     line-height: 1.7rem;
     letter-spacing: .03rem;
@@ -181,13 +181,9 @@ h3 {
       width: 50%;
       font-size: .9rem;    
     }
-    .bold {
-      font-family: "Open Sans Bold";
-      font-size: inherit;
-    }
     a {
+      @include open-sans-semibold;
       color: $brownPrimary;
-      font-family: "Open Sans Bold";
       font-size: inherit;
     }
   }
@@ -218,13 +214,13 @@ h3 {
   border: none;
 
   a {
+    @include open-sans-semibold;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     color: white;
-    font-family: "Open Sans Bold";
     font-size: .8rem;
     letter-spacing: .05rem;
     @media screen and (min-width: 414px) {
@@ -270,7 +266,7 @@ h3 {
       }
 
       .calendar-button-text {
-        font-family: "Open Sans Regular";
+        @include open-sans-regular;
         font-size: .8rem;
         @media screen and (min-width: 414px) {
           font-size: .85rem;

@@ -17,8 +17,8 @@
   .copyright {
     font-size: .8rem;
     @media screen and (min-width: 414px) {
+      @include open-sans-semibold;
       font-size: .9rem;
-      font-family: "Open Sans SemiBold"
     }
   }
 }

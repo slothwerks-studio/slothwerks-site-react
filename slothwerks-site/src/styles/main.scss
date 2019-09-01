@@ -1,6 +1,34 @@
+/* Import fonts */
+@font-face {
+  font-family: 'Rabbid Highway Sign II';
+  src: url('../assets/fonts/RabbidHighwaySignII.otf') format('opentype');
+}
+
+@mixin open-sans-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin open-sans-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+@mixin open-sans-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin open-sans-italic {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /* Import global stylesheets */
 @import './colors.scss';
 @import './variables.scss';
+@import './breakpoints.scss';
 @import './resets.scss';
 @import './master.scss';
 
@@ -18,30 +46,3 @@
 @import '../components/nav/header-nav/header-nav.scss';
 @import '../components/nav/sandwich-menu/sandwich-menu.scss';
 @import '../views/audio-archives/components/audio-archives.card.scss';
-
-/* Import fonts */
-@font-face {
-  font-family: 'Rabbid Highway Sign II';
-  src: url('../assets/fonts/RabbidHighwaySignII.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Open Sans Regular';
-  src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans SemiBold';
-  src: url('../assets/fonts/OpenSans-Semibold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans Bold';
-  src: url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans Italic';
-  src: url('../assets/fonts/OpenSans-Italic.ttf') format('truetype');
-}
-

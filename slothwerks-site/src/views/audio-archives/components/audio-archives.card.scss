@@ -90,8 +90,8 @@
         }     
       }
       .audio-archives-info-text {
+        @include open-sans-regular;
         font-size: .8rem;
-        font-family: "Open Sans Regular";
         line-height: 1.0rem; 
         @media screen and (min-width: 414px) {
           font-size: .85rem;
