@@ -40,43 +40,64 @@ export default function SandwichMenu(props) {
           </span>
         </div>
 
-        <div className="sandwich-menu-links">
-          <Link 
-            to="/about" 
-            className="menu-link"
-            onClick={()=>props.toggleSandwichMenu()}
-          >
-            <span>About</span>
-          </Link>
-          <Link 
-            to="/tech-calendar" 
-            className="menu-link"
-            onClick={()=>props.toggleSandwichMenu()}
-          >
-            <span>Grand Circus Tech Calendar</span>
-          </Link>
-          <Link 
-            to="/ena-calendar" 
-            className="menu-link"
-            onClick={()=>props.toggleSandwichMenu()}
-          >
-            <span>ENA Community Calendar</span>
-          </Link>
-          <Link 
-            to="/audio-archives" 
-            className="menu-link"
-            onClick={()=>props.toggleSandwichMenu()}
-          >
-            <span>Audio Archives</span>
-          </Link>
-          <Link 
-            to="/contact" 
-            className="menu-link"
-            onClick={()=>props.toggleSandwichMenu()}
-          >
-            <span>Contact</span>
-          </Link>
-        </div>
+        {/* The following bit of hackery is necessary due to how we're using transitions. */}
+        {props.visibility ?
+          <div className="sandwich-menu-links">
+            <Link 
+              to="/about" 
+              className="menu-link"
+              onClick={()=>props.toggleSandwichMenu()}
+            >
+              <span>About</span>
+            </Link>
+            <Link 
+              to="/tech-calendar" 
+              className="menu-link"
+              onClick={()=>props.toggleSandwichMenu()}
+            >
+              <span>Grand Circus Tech Calendar</span>
+            </Link>
+            <Link 
+              to="/ena-calendar" 
+              className="menu-link"
+              onClick={()=>props.toggleSandwichMenu()}
+            >
+              <span>ENA Community Calendar</span>
+            </Link>
+            <Link 
+              to="/audio-archives" 
+              className="menu-link"
+              onClick={()=>props.toggleSandwichMenu()}
+            >
+              <span>Audio Archives</span>
+            </Link>
+            <Link 
+              to="/contact" 
+              className="menu-link"
+              onClick={()=>props.toggleSandwichMenu()}
+            >
+              <span>Contact</span>
+            </Link>
+          </div>
+        :
+          <div className="sandwich-menu-links">
+            <span className="menu-link">
+              <span>About</span>
+            </span>
+            <span className="menu-link">
+              <span>Grand Circus Tech Calendar</span>
+            </span>
+            <span className="menu-link">
+              <span>ENA Community Calendar</span>
+            </span>
+            <span className="menu-link">
+              <span>Audio Archives</span>
+            </span>
+            <span className="menu-link">
+              <span>Contact</span>
+            </span>
+          </div>
+        }
 
         <div className="sandwich-menu-footer">
           <span className="copyright">
