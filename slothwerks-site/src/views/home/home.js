@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="Home">
+    <main className="Home">
       { redirectLocation }
       <div className="splash-wrapper">
         <div className="splash-text">
@@ -51,7 +51,7 @@ export default function Home() {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 
 }

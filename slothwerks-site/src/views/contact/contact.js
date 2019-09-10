@@ -14,7 +14,7 @@ export default function Contact() {
   // (No initial state)
 
   return (
-    <div className="Contact">
+    <main className="Contact">
       <h2 className="page-heading">
         <span className="heading-text">Contact SlothWerks</span>
         <span className="heading-divider"></span>
@@ -122,7 +122,7 @@ export default function Contact() {
           </a>
         </button>
       </div>
-    </div>
+    </main>
   );
 
 }

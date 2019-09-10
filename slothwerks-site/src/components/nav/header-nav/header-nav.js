@@ -16,10 +16,10 @@ import HeaderNavDesktop from './components/header-nav-desktop';
 export default function HeaderNav(props) {
 
   return (
-    <div className="HeaderNav">
+    <header className="HeaderNav">
       <HeaderNavMobile toggleSandwichMenu={props.toggleSandwichMenu} />
       <HeaderNavDesktop />
-    </div>
+    </header>
   );
 
 }

@@ -47,7 +47,7 @@ export default function TechCalendar() {
   }, [windowWidth]);
 
   return (
-    <div className="Tech_Calendar">
+    <main className="Tech_Calendar">
       <h2 className="page-heading">
         <span className="heading-text">Grand Circus Tech Calendar</span>
         <span className="heading-divider"></span>
@@ -144,7 +144,7 @@ export default function TechCalendar() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 
 }

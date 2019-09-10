@@ -15,7 +15,7 @@ export default function About() {
   // (No initial state)
 
   return (
-    <div className="About">
+    <main className="About">
       <h2 className="page-heading">
         <span className="heading-text">About SlothWerks</span>
         <span className="heading-divider"></span>
@@ -33,7 +33,7 @@ export default function About() {
           </button>
         </div>
       </div>
-    </div>
+    </main>
   );
 
 }

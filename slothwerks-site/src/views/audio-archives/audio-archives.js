@@ -17,7 +17,7 @@ export default function AudioArchives() {
   // (No initial state)
 
   return (
-    <div className="Audio_Archives">
+    <main className="Audio_Archives">
       <h2 className="page-heading">
         <span className="heading-text">Audio Archives</span>
         <span className="heading-divider"></span>
@@ -61,7 +61,7 @@ export default function AudioArchives() {
           audioLocation="https://www.slothwerks.com/media/new/live-at-arco-iris.mp3"
         />
       </div>
-    </div>
+    </main>
   );
 
 }

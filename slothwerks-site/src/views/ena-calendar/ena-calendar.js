@@ -47,7 +47,7 @@ export default function ENACalendar() {
   }, [windowWidth]);
 
   return (
-    <div className="ENA_Calendar">
+    <main className="ENA_Calendar">
       <h2 className="page-heading">
         <span className="heading-text">ENA Community Calendar</span>
         <span className="heading-divider"></span>
@@ -144,7 +144,7 @@ export default function ENACalendar() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 
 }
