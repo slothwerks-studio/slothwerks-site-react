@@ -21,15 +21,15 @@ export default function Home() {
     // Get current window URL
     const currentUrl = window.location.href;
     console.log(currentUrl);
-    if (currentUrl.includes("/about/")) {
+    if (currentUrl.includes("/about")) {
       setRedirectLocation(<Redirect to="/about" />);
-    } else if (currentUrl.includes("/tech-calendar/")) {
+    } else if (currentUrl.includes("/tech-calendar")) {
       setRedirectLocation(<Redirect to="/tech-calendar" />);
-    } else if (currentUrl.includes("/ena-calendar/")) {
+    } else if (currentUrl.includes("/ena-calendar")) {
       setRedirectLocation(<Redirect to="/ena-calendar" />);
-    } else if (currentUrl.includes("/audio-archives/")) {
+    } else if (currentUrl.includes("/audio-archives")) {
       setRedirectLocation(<Redirect to="/audio-archives" />);
-    } else if (currentUrl.includes("/contact/")) {
+    } else if (currentUrl.includes("/contact")) {
       setRedirectLocation(<Redirect to="/contact" />);
     }
   }, []);
