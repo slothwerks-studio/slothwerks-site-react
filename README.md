@@ -3,7 +3,7 @@
 
 ### What is this project?
 
-This is the living, public repo for the SlothWerks LLC website.  It started out as a ["placeholder" site](https://github.com/slothwerks-studio/slothwerks-placeholder-site) using HTML, CSS, and vanilla JavaScript.  However, in order to take advantage of contemporary web technologies, we decided to upgrade to React.
+This is the living, public repo for the [SlothWerks LLC website](https://www.slothwerks.com/).  It started out as a ["placeholder" site](https://github.com/slothwerks-studio/slothwerks-placeholder-site) using HTML, CSS, and vanilla JavaScript.  However, in order to take advantage of contemporary web technologies, we decided to upgrade to [React](https://reactjs.org/).
 
 Learn more about this project in the [repo Wiki](https://github.com/slothwerks-studio/slothwerks-site-react/wiki).
 
