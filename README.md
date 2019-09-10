@@ -3,7 +3,9 @@
 
 ### What is this project?
 
-This is the living, public repo for the SlothWerks LLC website.  It started out as a ["placeholder" site](https://github.com/slothwerks-studio/slothwerks-placeholder-site) using HTML, CSS, and vanilla JavaScript.  However, in order to take advantage of contemporary web technologies, we decided to upgrade to React.
+This is the living, public repo for the [SlothWerks LLC website](https://www.slothwerks.com/).  It started out as a ["placeholder" site](https://github.com/slothwerks-studio/slothwerks-placeholder-site) using HTML, CSS, and vanilla JavaScript.  However, in order to take advantage of contemporary web technologies, we decided to upgrade to [React](https://reactjs.org/).
+
+Learn more about this project in the [repo Wiki](https://github.com/slothwerks-studio/slothwerks-site-react/wiki).
 
 ### How is development done locally?
 
@@ -15,26 +17,17 @@ In the project directory, you can run:
 
 #### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Runs the app in the development mode.  Once active, you may use [http://localhost:3000](http://localhost:3000) to view it in the browser.  The page will refresh automatically when changes to the project files are detected.
 
 #### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.  Check out the React [documentation on running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 #### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.  It correctly bundles React in production mode and optimizes the build for the best performance (this includes minifying the code).
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Check out the React [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### Troubleshooting
 
