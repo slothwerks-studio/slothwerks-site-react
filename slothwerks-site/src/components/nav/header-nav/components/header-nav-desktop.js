@@ -32,18 +32,18 @@ export default function HeaderNavDesktop(props) {
           </Route>
         </Switch>
         <Switch>
-          <Route path="/audio-archives">
-            <Link to="/audio-archives" className="header-nav-link active">
+          <Route path="/tech-calendar">
+            <Link to="/tech-calendar" className="header-nav-link active">
               <span className="bold">
-                Audio<br />Archives
+                Grand Circus<br />Tech Calendar
               </span>
               <span className="header-nav-link-underline" />
             </Link>
           </Route>
           <Route path="*">
-            <Link to="/audio-archives" className="header-nav-link">
+            <Link to="/tech-calendar" className="header-nav-link">
               <span>
-                Audio<br />Archives
+                Grand Circus<br />Tech Calendar
               </span>
             </Link>
           </Route>
@@ -66,18 +66,18 @@ export default function HeaderNavDesktop(props) {
           </Route>
         </Switch>        
         <Switch>
-          <Route path="/tech-calendar">
-            <Link to="/tech-calendar" className="header-nav-link active">
+          <Route path="/audio-archives">
+            <Link to="/audio-archives" className="header-nav-link active">
               <span className="bold">
-                Grand Circus<br />Tech Calendar
+                Audio<br />Archives
               </span>
               <span className="header-nav-link-underline" />
             </Link>
           </Route>
           <Route path="*">
-            <Link to="/tech-calendar" className="header-nav-link">
+            <Link to="/audio-archives" className="header-nav-link">
               <span>
-                Grand Circus<br />Tech Calendar
+                Audio<br />Archives
               </span>
             </Link>
           </Route>
