@@ -88,20 +88,18 @@ export default function TechCalendar() {
           <div className="calendar-button-wrapper">
             <div className="calendar-button-text-container">
               <span className="calendar-button-icon">
-                <i className="far fa-calendar-plus"></i>
+                <i className="fas fa-file-download"></i>
               </span>
               <span className="calendar-button-text">
-                Add to Google Calendar
+                Download iCal ICS
               </span>
             </div>
             <button type="button" className="action-button">
               <a 
-                href="https://calendar.google.com/calendar?cid=dWhqNmI5cTM1Z3RyNWM2MG1sN3V0c2lkODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
-                target="_blank" 
-                title="Add to Google Calendar"
-                rel="noopener noreferrer"
+                href="https://calendar.google.com/calendar/ical/uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com/public/basic.ics" 
+                title="Download iCal *.ICS file"
               >
-                Add
+                Download
               </a>
             </button>
           </div>
@@ -121,15 +119,13 @@ export default function TechCalendar() {
                 New Window
               </a>
               <a 
-                href="https://calendar.google.com/calendar?cid=dWhqNmI5cTM1Z3RyNWM2MG1sN3V0c2lkODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" 
-                target="_blank" 
-                title="Add to Google Calendar"
-                rel="noopener noreferrer"
+                href="https://calendar.google.com/calendar/ical/uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com/public/basic.ics" 
+                title="Download iCal *.ICS file"
               >
                 <span className="calendar-controls-icon">
-                  <i className="far fa-calendar-plus"></i>
+                  <i className="fas fa-file-download"></i>
                 </span>
-                Add to Calendar
+                Download iCal ICS
               </a>
             </div>
             <iframe 
