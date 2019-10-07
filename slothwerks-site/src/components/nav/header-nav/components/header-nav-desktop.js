@@ -35,7 +35,7 @@ export default function HeaderNavDesktop(props) {
           <Route path="/tech-calendar">
             <Link to="/tech-calendar" className="header-nav-link active">
               <span className="bold">
-                Grand Circus<br />Tech Calendar
+                Grand Rapids<br />Tech Calendar
               </span>
               <span className="header-nav-link-underline" />
             </Link>
@@ -43,7 +43,7 @@ export default function HeaderNavDesktop(props) {
           <Route path="*">
             <Link to="/tech-calendar" className="header-nav-link">
               <span>
-                Grand Circus<br />Tech Calendar
+                Grand Rapids<br />Tech Calendar
               </span>
             </Link>
           </Route>

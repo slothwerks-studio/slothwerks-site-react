@@ -49,7 +49,7 @@ export default function TechCalendar() {
   return (
     <main className="Tech_Calendar">
       <h2 className="page-heading">
-        <span className="heading-text">Grand Circus Tech Calendar</span>
+        <span className="heading-text">Grand Rapids Tech Calendar</span>
         <span className="heading-divider"></span>
       </h2>
       <div className="content-text-wrapper">
@@ -129,7 +129,7 @@ export default function TechCalendar() {
               </a>
             </div>
             <iframe 
-              title="Grand Circus Tech Calendar"
+              title="Grand Rapids Tech Calendar"
               className="calendar-frame" 
               src="https://calendar.google.com/calendar/embed?showTitle=0&showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uhj6b9q35gtr5c60ml7utsid80%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FNew_York"
               width="100%"
