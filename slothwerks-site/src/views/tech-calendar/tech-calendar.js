@@ -54,15 +54,15 @@ export default function TechCalendar() {
       </h2>
       <div className="content-text-wrapper">
         <p className="content-text">
-          SlothWerks maintains a calendar of tech-related events occurring at <a href="https://www.grandcircus.co/grand-rapids-coding-bootcamp/" target="_blank" rel="noopener noreferrer">Grand Circus</a> and throughout the downtown area of Grand Rapids, Michigan.
+          SlothWerks maintains a calendar of tech-related events and meetups occurring in and around the downtown Grand Rapids, Michigan area.  The calendar is now also available as an app from <a href="https://play.google.com/store/apps/details?id=com.slothwerks.TechCalendar" target="_blank" rel="noopener noreferrer">Google Play</a>.
         </p>
       </div>
       <div className="sub-section-wrapper">
         <h3 className="sub-section-heading">
-          About Grand Circus
+          About the Tech Calendar App
         </h3>
         <p className="sub-section-text">
-          Grand Circus is a tech career training organization based in Detroit, Michigan.  They also maintain a campus at <a href="http://startgarden.com/" target="_blank" rel="noopener noreferrer">Start Garden</a> in Grand Rapids.
+          For both new and seasoned developers, finding ways to interact with the local creative community can sometimes be a challenge.  Launched to beta in just over three weeks, the SlothWerks Tech Calendar app was designed to help bridge the gap.  The app sources its event data from Google Calendar and uses Google Places to acquire location information and venue images.  Non-android users may access the app using <a href="https://expo.io/@slothwerks/tech-calendar" target="_blank" rel="noopener noreferrer">Expo</a>.
         </p>
         <div className="calendar-button-section">
           <div className="calendar-button-wrapper">
