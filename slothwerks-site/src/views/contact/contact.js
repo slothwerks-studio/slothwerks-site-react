@@ -106,7 +106,7 @@ export default function Contact() {
           </a>
         </button>
         <button type="button" className="contact-button">
-          <a href="https://join.slack.com/t/slothwerks-studio/shared_invite/enQtNTE2MTU0NTkwMDAzLTNkYzhlNGIwMTM2YWU2NWQ0ZWI1MmUxMDFkY2I0NGY3N2EzYmVjNjg2OTlhYmNhZjQwZTBlZDRkMzdiYzQxODQ" target="_blank" rel="noopener noreferrer">
+          <a href="https://join.slack.com/t/slothwerks-studio/shared_invite/enQtNTE2MTU0NTkwMDAzLTEyNzM5MzFiMmQwZDAwNjBiYWViODc1NWVjYjFiMjljZWI5M2M2YzBjODZiOTY3OGRiYmZkZDE0ZTFkNDNjZGU" target="_blank" rel="noopener noreferrer">
             <span className="contact-button-icon-container">
               <img 
                 className="contact-button-icon"
