@@ -35,7 +35,7 @@ export default function HeaderNavDesktop(props) {
           <Route path="/tech-calendar">
             <Link to="/tech-calendar" className="header-nav-link active">
               <span className="bold">
-                Grand Rapids<br />Tech Calendar
+                Tech<br />Calendar
               </span>
               <span className="header-nav-link-underline" />
             </Link>
@@ -43,24 +43,24 @@ export default function HeaderNavDesktop(props) {
           <Route path="*">
             <Link to="/tech-calendar" className="header-nav-link">
               <span>
-                Grand Rapids<br />Tech Calendar
+                Tech<br />Calendar
               </span>
             </Link>
           </Route>
         </Switch>
         <Switch>
-          <Route path="/ena-calendar">
-            <Link to="/ena-calendar" className="header-nav-link active">
+          <Route path="/community-calendar">
+            <Link to="/community-calendar" className="header-nav-link active">
               <span className="bold">
-                ENA Community<br />Calendar
+                Community<br />Calendar
               </span>
               <span className="header-nav-link-underline" />
             </Link>
           </Route>
           <Route path="*">
-            <Link to="/ena-calendar" className="header-nav-link">
+            <Link to="/community-calendar" className="header-nav-link">
               <span>
-                ENA Community<br />Calendar
+                Community<br />Calendar
               </span>
             </Link>
           </Route>

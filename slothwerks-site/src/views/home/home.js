@@ -25,8 +25,8 @@ export default function Home() {
       setRedirectLocation(<Redirect to="/about" />);
     } else if (currentUrl.includes("/tech-calendar")) {
       setRedirectLocation(<Redirect to="/tech-calendar" />);
-    } else if (currentUrl.includes("/ena-calendar")) {
-      setRedirectLocation(<Redirect to="/ena-calendar" />);
+    } else if (currentUrl.includes("/community-calendar")) {
+      setRedirectLocation(<Redirect to="/community-calendar" />);
     } else if (currentUrl.includes("/audio-archives")) {
       setRedirectLocation(<Redirect to="/audio-archives" />);
     } else if (currentUrl.includes("/contact")) {

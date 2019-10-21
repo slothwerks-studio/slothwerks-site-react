@@ -55,14 +55,14 @@ export default function SandwichMenu(props) {
               className="menu-link"
               onClick={()=>props.toggleSandwichMenu()}
             >
-              <span>Grand Rapids Tech Calendar</span>
+              <span>Tech Calendar</span>
             </Link>
             <Link 
-              to="/ena-calendar" 
+              to="/community-calendar" 
               className="menu-link"
               onClick={()=>props.toggleSandwichMenu()}
             >
-              <span>ENA Community Calendar</span>
+              <span>Community Calendar</span>
             </Link>
             <Link 
               to="/audio-archives" 
@@ -85,10 +85,10 @@ export default function SandwichMenu(props) {
               <span>About</span>
             </span>
             <span className="menu-link">
-              <span>Grand Rapids Tech Calendar</span>
+              <span>Tech Calendar</span>
             </span>
             <span className="menu-link">
-              <span>ENA Community Calendar</span>
+              <span>Community Calendar</span>
             </span>
             <span className="menu-link">
               <span>Audio Archives</span>
